@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 
 import projects from './projectsData';
@@ -13,7 +13,21 @@ function App() {
 }
 
 function ProjectsList() {
-	return projects.map((project, i) => <ProjectCard project={project} key={i} />);
+	const [searchValue, setSearchValue] = useState('');
+
+	return (
+		<div>
+			<input
+				value={searchValue}
+				onChange={(e) => setSearchValue(e.target.value)}
+			/>
+			{projects
+				.filter(({ name }) => name.toLowerCase().startsWith(searchValue))
+				.map((project, i) => (
+					<ProjectCard project={project} key={i} />
+				))}
+		</div>
+	);
 }
 
 function ProjectCard(props) {
