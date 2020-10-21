@@ -3,34 +3,60 @@ import './App.css';
 
 import projects from './projectsData';
 
-function App() {
+const App = () => {
 	return (
 		<div className='App'>
-			<header className='App-header'>Hello from react</header>
-			<ProjectsList />
+			<header className='App-header'>Pasha's Porfolio</header>
+			<ProjectsContainer />
 		</div>
 	);
-}
+};
 
-function ProjectsList() {
+const ProjectsContainer = () => {
 	const [searchValue, setSearchValue] = useState('');
+	const filteredProjects = projects.filter(({ name }) =>
+		name.toLowerCase().includes(searchValue.toLowerCase())
+	);
+
+	const handleKeyPress = (e) => {
+		if (filteredProjects.length === 1 && e.key === 'Enter') {
+			const [{ url }] = filteredProjects;
+			window.open(url, '_blank');
+		}
+	};
 
 	return (
 		<div>
-			<input
-				value={searchValue}
-				onChange={(e) => setSearchValue(e.target.value)}
+			<SearchBox
+				placeholder='search projects'
+				handleChange={(e) => setSearchValue(e.target.value)}
+				handleKeyPress={handleKeyPress}
 			/>
-			{projects
-				.filter(({ name }) => name.toLowerCase().startsWith(searchValue))
-				.map((project, i) => (
-					<ProjectCard project={project} key={i} />
-				))}
+			<ProjectsList projects={filteredProjects} />
 		</div>
 	);
-}
+};
 
-function ProjectCard(props) {
+const SearchBox = ({ placeholder, handleChange, handleKeyPress }) => (
+	<input
+		type='search'
+		placeholder={placeholder}
+		onChange={handleChange}
+		onKeyPress={handleKeyPress}
+	/>
+);
+
+const ProjectsList = ({ projects }) => {
+	return (
+		<div>
+			{projects.map((project, i) => (
+				<ProjectCard project={project} key={i} />
+			))}
+		</div>
+	);
+};
+
+const ProjectCard = (props) => {
 	const { name, url } = props.project;
 	return (
 		<div>
@@ -39,6 +65,6 @@ function ProjectCard(props) {
 			</a>
 		</div>
 	);
-}
+};
 
 export default App;
