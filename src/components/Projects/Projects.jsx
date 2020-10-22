@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 
-import SearchBox from '../../SearchBox/SearchBox';
-import ProjectsList from '../ProjectsList/ProjectsList';
-
-import projects from './projectsData';
+import PortfolioContext from '../../context/context';
+import SearchBox from '../SearchBox/SearchBox';
+import ProjectsList from './ProjectsList/ProjectsList';
 
 const ProjectsContainer = () => {
+	const { projects } = useContext(PortfolioContext);
 	const [searchValue, setSearchValue] = useState('');
 	const filteredProjects = projects.filter(({ name }) =>
 		name.toLowerCase().includes(searchValue.toLowerCase())
