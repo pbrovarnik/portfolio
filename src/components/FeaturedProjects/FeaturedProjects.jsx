@@ -67,7 +67,7 @@ const FeaturedProject = () => {
 									>
 										<div className='featured-project-wrapper__image-container'>
 											<a
-												href={url || '#!'}
+												href={url}
 												target='_blank'
 												aria-label='Project Link'
 												rel='noopener noreferrer'
