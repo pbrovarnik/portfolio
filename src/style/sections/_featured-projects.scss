@@ -1,4 +1,4 @@
-#feature-projects {
+#featured-projects {
 	background-color: $white-color;
 	color: $dark-blue-text;
 	margin-top: -15rem;
@@ -9,14 +9,14 @@
 		padding-top: 5rem;
 	}
 
-	.feature-project-wrapper {
-		margin-bottom: 15rem;
+	.featured-project-wrapper {
+		// margin-bottom: 15rem;
 
 		@include respond(phone) {
 			margin-bottom: 0rem;
 		}
 
-		.row {
+		.row:not(:last-child) {
 			margin-bottom: 8rem;
 
 			@include respond(phone) {

@@ -23,9 +23,9 @@ const FeaturedProject = () => {
 	}, []);
 
 	return (
-		<section id='feature-projects'>
+		<section id='featured-projects'>
 			<Container>
-				<div className='feature-project-wrapper'>
+				<div className='featured-project-wrapper'>
 					<Title title='Featured projects' />
 					{featuredProjects.map((project, id) => {
 						const { alt, img, title, info, info2, url, repo } = project;
@@ -40,8 +40,8 @@ const FeaturedProject = () => {
 										delay={500}
 										distance='30px'
 									>
-										<div className='feature-project-wrapper__text'>
-											<h3 className='feature-project-wrapper__text-title'>{title}</h3>
+										<div className='featured-project-wrapper__text'>
+											<h3 className='featured-project-wrapper__text-title'>{title}</h3>
 											<div>
 												<p>{info}</p>
 												<p className='mb-4'>{info2}</p>
@@ -74,7 +74,7 @@ const FeaturedProject = () => {
 										delay={1000}
 										distance='30px'
 									>
-										<div className='feature-project-wrapper__image-container'>
+										<div className='featured-project-wrapper__image-container'>
 											<a
 												href={url || '#!'}
 												target='_blank'
@@ -96,7 +96,7 @@ const FeaturedProject = () => {
 												>
 													<div data-tilt className='thumbnail rounded'>
 														<img
-															className='feature-project-wrapper__image'
+															className='featured-project-wrapper__image'
 															alt={alt}
 															src={img}
 														/>
