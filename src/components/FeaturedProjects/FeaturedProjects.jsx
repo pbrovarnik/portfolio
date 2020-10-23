@@ -23,9 +23,9 @@ const FeaturedProject = () => {
 	}, []);
 
 	return (
-		<section id='projects'>
+		<section id='feature-projects'>
 			<Container>
-				<div className='project-wrapper'>
+				<div className='feature-project-wrapper'>
 					<Title title='Featured projects' />
 					{featuredProjects.map((project, id) => {
 						const { alt, img, title, info, info2, url, repo } = project;
@@ -40,8 +40,8 @@ const FeaturedProject = () => {
 										delay={500}
 										distance='30px'
 									>
-										<div className='project-wrapper__text'>
-											<h3 className='project-wrapper__text-title'>{title}</h3>
+										<div className='feature-project-wrapper__text'>
+											<h3 className='feature-project-wrapper__text-title'>{title}</h3>
 											<div>
 												<p>{info}</p>
 												<p className='mb-4'>{info2}</p>
@@ -52,7 +52,7 @@ const FeaturedProject = () => {
 												className='cta-btn cta-btn--hero'
 												href={url}
 											>
-												See Live
+												Demo
 											</a>
 
 											<a
@@ -61,7 +61,7 @@ const FeaturedProject = () => {
 												className='cta-btn text-color-main'
 												href={repo}
 											>
-												Source Code
+												Code
 											</a>
 										</div>
 									</Fade>
@@ -74,7 +74,7 @@ const FeaturedProject = () => {
 										delay={1000}
 										distance='30px'
 									>
-										<div className='project-wrapper__image-container'>
+										<div className='feature-project-wrapper__image-container'>
 											<a
 												href={url || '#!'}
 												target='_blank'
@@ -95,7 +95,11 @@ const FeaturedProject = () => {
 													}}
 												>
 													<div data-tilt className='thumbnail rounded'>
-														<img className='project-wrapper__image' alt={alt} src={img} />
+														<img
+															className='feature-project-wrapper__image'
+															alt={alt}
+															src={img}
+														/>
 													</div>
 												</Tilt>
 											</a>
