@@ -6,7 +6,7 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
 const Contact = () => {
-	const { contact } = useContext(PortfolioContext);
+	const { contact, isMobile } = useContext(PortfolioContext);
 	const { cta, btn, email } = contact;
 
 	return (
@@ -19,7 +19,9 @@ const Contact = () => {
 						<a
 							target='_blank'
 							rel='noopener noreferrer'
-							className='cta-btn cta-btn cta-btn--hero'
+							className={`cta-btn cta-btn ${
+								isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
+							}`}
 							href={`mailto:${email}`}
 						>
 							{btn}

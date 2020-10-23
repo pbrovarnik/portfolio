@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react';
+import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import Tilt from 'react-tilt';
 import { Container, Row, Col } from 'react-bootstrap';
@@ -7,20 +7,7 @@ import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
 
 const FeaturedProject = () => {
-	const { featuredProjects } = useContext(PortfolioContext);
-
-	const [isDesktop, setIsDesktop] = useState(false);
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		if (window.innerWidth > 769) {
-			setIsDesktop(true);
-			setIsMobile(false);
-		} else {
-			setIsMobile(true);
-			setIsDesktop(false);
-		}
-	}, []);
+	const { featuredProjects, isMobile } = useContext(PortfolioContext);
 
 	return (
 		<section id='featured-projects'>
@@ -34,7 +21,7 @@ const FeaturedProject = () => {
 							<Row key={id}>
 								<Col lg={4} sm={12}>
 									<Fade
-										left={isDesktop}
+										left={!isMobile}
 										bottom={isMobile}
 										duration={1000}
 										delay={500}
@@ -49,7 +36,9 @@ const FeaturedProject = () => {
 											<a
 												target='_blank'
 												rel='noopener noreferrer'
-												className='cta-btn cta-btn--hero'
+												className={`cta-btn ${
+													isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
+												}`}
 												href={url}
 											>
 												Demo
@@ -58,7 +47,9 @@ const FeaturedProject = () => {
 											<a
 												target='_blank'
 												rel='noopener noreferrer'
-												className='cta-btn text-color-main'
+												className={`cta-btn ${
+													isMobile ? 'text-color-main--mobile' : 'text-color-main'
+												}`}
 												href={repo}
 											>
 												Code
@@ -68,7 +59,7 @@ const FeaturedProject = () => {
 								</Col>
 								<Col lg={8} sm={12}>
 									<Fade
-										right={isDesktop}
+										right={!isMobile}
 										bottom={isMobile}
 										duration={1000}
 										delay={1000}

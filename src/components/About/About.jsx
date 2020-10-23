@@ -1,4 +1,4 @@
-import React, { useContext, useState, useEffect } from 'react';
+import React, { useContext } from 'react';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 
@@ -7,21 +7,8 @@ import Title from '../Title/Title';
 import profileImg from '../../assets/images/profile-image.jpg';
 
 const About = () => {
-	const { about } = useContext(PortfolioContext);
+	const { about, isMobile } = useContext(PortfolioContext);
 	const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
-
-	const [isDesktop, setIsDesktop] = useState(false);
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		if (window.innerWidth > 769) {
-			setIsDesktop(true);
-			setIsMobile(false);
-		} else {
-			setIsMobile(true);
-			setIsDesktop(false);
-		}
-	}, []);
 
 	return (
 		<section id='about'>
@@ -41,7 +28,7 @@ const About = () => {
 					</Col>
 					<Col md={6} sm={12}>
 						<Fade
-							left={isDesktop}
+							left={!isMobile}
 							bottom={isMobile}
 							duration={1000}
 							delay={1000}
@@ -55,7 +42,9 @@ const About = () => {
 									<a
 										target='_blank'
 										rel='noopener noreferrer'
-										className='cta-btn cta-btn--resume'
+										className={`cta-btn ${
+											isMobile ? 'cta-btn--resume-mobile' : 'cta-btn--resume'
+										}`}
 										href={resume}
 									>
 										Resume

@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Card } from 'react-bootstrap';
-import './style.scss';
+
+import PortfolioContext from '../../../context/context';
 
 const ProjectCard = (props) => {
 	const { name, url } = props.project;
+	const { isMobile } = useContext(PortfolioContext);
+
 	return (
 		// <div>
 		// 	<a href={url} target='_blank' rel='noopener noreferrer'>
@@ -17,7 +20,9 @@ const ProjectCard = (props) => {
 				<Card.Link
 					target='_blank'
 					rel='noopener noreferrer'
-					className='cta-btn cta-btn--hero projects-list__card--btn'
+					className={`cta-btn ${
+						isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
+					} projects-list__card--btn`}
 					href={url}
 				>
 					Demo
@@ -25,7 +30,9 @@ const ProjectCard = (props) => {
 				<Card.Link
 					target='_blank'
 					rel='noopener noreferrer'
-					className='cta-btn text-color-main projects-list__card--btn'
+					className={`cta-btn ${
+						isMobile ? 'text-color-main--mobile' : 'text-color-main'
+					} projects-list__card--btn`}
 					href='#'
 				>
 					Code

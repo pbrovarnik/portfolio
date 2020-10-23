@@ -25,6 +25,7 @@ const App = () => {
 	const [projects, setProjects] = useState([]);
 	const [contact, setContact] = useState({});
 	const [footer, setFooter] = useState({});
+	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
 		setHero({ ...heroData });
@@ -33,11 +34,20 @@ const App = () => {
 		setProjects([...projectsData]);
 		setContact({ ...contactData });
 		setFooter({ ...footerData });
+		setIsMobile(/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent));
 	}, []);
 
 	return (
 		<PortfolioProvider
-			value={{ hero, about, featuredProjects, projects, contact, footer }}
+			value={{
+				hero,
+				about,
+				featuredProjects,
+				projects,
+				contact,
+				footer,
+				isMobile,
+			}}
 		>
 			<Hero />
 			<About />

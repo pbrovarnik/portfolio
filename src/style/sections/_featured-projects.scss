@@ -24,6 +24,13 @@
 			}
 		}
 
+		// Reverses the middle row
+		// .row:nth-of-type(2) {
+		// 	display: flex;
+		// 	flex-direction: row-reverse;
+		// 	justify-content: flex-end;
+		// }
+
 		&__text {
 			text-align: left;
 
