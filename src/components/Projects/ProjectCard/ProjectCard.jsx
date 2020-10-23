@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 import PortfolioContext from '../../../context/context';
 
 const ProjectCard = (props) => {
-	const { name, url } = props.project;
+	const { name, repo, url } = props.project;
 	const { isMobile } = useContext(PortfolioContext);
 
 	return (
@@ -33,7 +33,7 @@ const ProjectCard = (props) => {
 								className={`cta-btn ${
 									isMobile ? 'text-color-main--mobile' : 'text-color-main'
 								} projects-list__card--btn`}
-								href='#'
+								href={repo}
 							>
 								<i className='fas fa-code'></i>
 							</Card.Link>

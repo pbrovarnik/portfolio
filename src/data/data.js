@@ -1,4 +1,5 @@
-import clothingShopImg from '../assets/images/clothing-shop-image.png';
+import profilePhoto from '../assets/images/profile-photo.jpg';
+import clothingShopImg from '../assets/images/clothing-shop.png';
 import monstersRolodexImg from '../assets/images/monsters-rolodex.png';
 import movieFightImg from '../assets/images/movie-fight.png';
 
@@ -19,6 +20,7 @@ export const heroData = {
 
 // About data
 export const aboutData = {
+	img: profilePhoto,
 	paragraphOne:
 		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
 	paragraphTwo:
@@ -91,50 +93,113 @@ export const footerData = {
 export const projectsData = [
 	{
 		name: 'Animated nav',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/animated-navigation/src/master/',
 		url: 'https://pasha-animated-navigation.herokuapp.com/',
 	},
 	{
 		name: 'Animated page',
+		repo:
+			'https://bitbucket.org/Pasha-brovarnik/animated-landing-page/src/master/',
 		url: 'https://pasha-animated-landing-page.herokuapp.com/',
 	},
-	{ name: 'Bookmark', url: 'https://pasha-bookmark-app.herokuapp.com/' },
-	{ name: 'Calculator', url: 'https://pasha-calculator.herokuapp.com/' },
-	{ name: 'Clothing shop', url: 'https://pashas-clothing-shop.herokuapp.com/' },
+	{
+		name: 'Bookmark',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/bookmark-app/src/master/',
+		url: 'https://pasha-bookmark-app.herokuapp.com/',
+	},
+	{
+		name: 'Calculator',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/calculator/src/master/',
+		url: 'https://pasha-calculator.herokuapp.com/',
+	},
 	{
 		name: 'Countdown',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/custom-countdown/src/master/',
 		url: 'https://pasha-custom-countdown.herokuapp.com/',
 	},
 	{
 		name: 'Form validation',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/form-validation/src/master/',
 		url: 'https://pasha-form-validation.herokuapp.com/',
 	},
 	{
 		name: 'Infinite scroll',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/infinite-scroll/src/master/',
 		url: 'https://pasha-infinite-scroll.herokuapp.com/',
 	},
-	{ name: 'Jokes', url: 'https://pasha-jokes.herokuapp.com/' },
-	{ name: 'Kanban', url: 'https://pasha-kanban.herokuapp.com/' },
+	{
+		name: 'Jokes',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/jokes/src/master/',
+		url: 'https://pasha-jokes.herokuapp.com/',
+	},
+	{
+		name: 'Kanban',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/kanban/src/master/',
+		url: 'https://pasha-kanban.herokuapp.com/',
+	},
 	{
 		name: 'Light dark mode',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/light-dark-mode/src/master/',
 		url: 'https://pasha-light-dark-mode.herokuapp.com/',
 	},
-	{ name: 'Math sprint', url: 'https://pasha-math-sprint.herokuapp.com/' },
+	{
+		name: 'Math sprint',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/math-sprint-game/src/master/',
+		url: 'https://pasha-math-sprint.herokuapp.com/',
+	},
 	{
 		name: 'Monsters Rolodex',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/monsters-rolodex/src/master/',
 		url: 'https://pasha-monsters-rolodex.herokuapp.com/',
 	},
-	{ name: 'Movie fight', url: 'https://pasha-movie-fight.herokuapp.com/' },
-	{ name: 'Music player', url: 'https://pasha-music-player.herokuapp.com/' },
-	{ name: 'Nasa pictures', url: 'https://pasha-nasa-pictures.herokuapp.com/' },
-	{ name: 'Paint', url: 'https://pasha-paint.herokuapp.com/' },
+	{
+		name: 'Music player',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/music-player/src/master/',
+		url: 'https://pasha-music-player.herokuapp.com/',
+	},
+	{
+		name: 'Nasa pictures',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/nasa-pictures/src/master/',
+		url: 'https://pasha-nasa-pictures.herokuapp.com/',
+	},
+	{
+		name: 'Paint',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/paint/src/master/',
+		url: 'https://pasha-paint.herokuapp.com/',
+	},
 	{
 		name: 'Picture-in-picture',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/picture-in-picture/src/master/',
 		url: 'https://pasha-picture-in-picture.herokuapp.com/',
 	},
-	{ name: 'Pong', url: 'https://pasha-pong.herokuapp.com/' },
-	{ name: 'Quotes', url: 'https://pasha-quotes.herokuapp.com/' },
-	{ name: 'Secret chat', url: 'https://pasha-secret-chat.herokuapp.com/' },
-	{ name: 'Splash page', url: 'https://pasha-splash-page.herokuapp.com/' },
-	{ name: 'Spock Rock', url: 'https://pasha-spock-rock.herokuapp.com/' },
-	{ name: 'Video player', url: 'https://pasha-video-player.herokuapp.com/' },
+	{
+		name: 'Pong',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/pong/src/master/',
+		url: 'https://pasha-pong.herokuapp.com/',
+	},
+	{
+		name: 'Quotes',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/quotes/src/master/',
+		url: 'https://pasha-quotes.herokuapp.com/',
+	},
+	{
+		name: 'Secret chat',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/secret-chat/src/master/',
+		url: 'https://pasha-secret-chat.herokuapp.com/',
+	},
+	{
+		name: 'Splash page',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/splash-page/src/master/',
+		url: 'https://pasha-splash-page.herokuapp.com/',
+	},
+	{
+		name: 'Spock Rock',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/spock-rock-game/src/master/',
+		url: 'https://pasha-spock-rock.herokuapp.com/',
+	},
+	{
+		name: 'Video player',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/video-player/src/master/',
+		url: 'https://pasha-video-player.herokuapp.com/',
+	},
 ];

@@ -4,11 +4,10 @@ import { Container, Row, Col } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
-import profileImg from '../../assets/images/profile-image.jpg';
 
 const About = () => {
 	const { about, isMobile } = useContext(PortfolioContext);
-	const { paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+	const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
 
 	return (
 		<section id='about'>
@@ -21,7 +20,7 @@ const About = () => {
 								<img
 									className='rounded shadow-lg about-wrapper__image'
 									alt='about'
-									src={profileImg}
+									src={img}
 								/>
 							</div>
 						</Fade>
