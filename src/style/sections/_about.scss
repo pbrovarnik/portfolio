@@ -14,6 +14,7 @@
 
 	@include respond(tab-land) {
 		height: 100%;
+		padding-bottom: 5rem;
 		-webkit-clip-path: none;
 		clip-path: none;
 	}
@@ -32,13 +33,14 @@
 			@include respond(tab-port) {
 				padding-bottom: 6.4rem;
 			}
-			@include respond(tab-land) {
-				height: 100%;
-			}
 		}
 
 		&__image {
-			width: 350px;
+			width: 35rem;
+
+			@include respond(tab-port) {
+				width: 30rem;
+			}
 		}
 
 		&__info {
@@ -46,8 +48,17 @@
 			height: 100%;
 			justify-content: center;
 			flex-direction: column;
+			align-items: flex-start;
 
 			@include respond(phone) {
+				align-items: center;
+			}
+
+			@include respond(tab-port) {
+				height: 87%;
+			}
+
+			@media screen and (max-width: 767px) {
 				align-items: center;
 			}
 
@@ -56,10 +67,15 @@
 
 				@include respond(tab-port) {
 					font-size: 1.5rem;
-					text-align: center;
+					text-align: left;
 				}
+
 				@include respond(phone) {
 					font-size: 1.6rem;
+					text-align: center;
+				}
+
+				@media screen and (max-width: 767px) {
 					text-align: center;
 				}
 

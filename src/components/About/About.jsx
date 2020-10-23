@@ -51,7 +51,7 @@ const About = () => {
 								<p className='about-wrapper__info-text'>{paragraphOne}</p>
 								<p className='about-wrapper__info-text'>{paragraphTwo}</p>
 								<p className='about-wrapper__info-text'>{paragraphThree}</p>
-								<span className='d-flex mt-3'>
+								<span className='d-flex mt-3 about-wrapper__info-btn'>
 									<a
 										target='_blank'
 										rel='noopener noreferrer'

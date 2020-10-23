@@ -34,7 +34,7 @@ const Header = () => {
 				>
 					<h1 className='hero-title'>
 						{title}
-						<span className='text-color-main'>{name}</span>
+						<span className='text-color-main'>{name}</span>,
 						<br />
 						{subtitle}
 					</h1>

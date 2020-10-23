@@ -90,12 +90,12 @@ export const footerData = {
 // List of built projects
 export const projectsData = [
 	{
-		name: 'Animated landing page',
-		url: 'https://pasha-animated-landing-page.herokuapp.com/',
+		name: 'Animated nav',
+		url: 'https://pasha-animated-navigation.herokuapp.com/',
 	},
 	{
-		name: 'Animated navigation',
-		url: 'https://pasha-animated-navigation.herokuapp.com/',
+		name: 'Animated page',
+		url: 'https://pasha-animated-landing-page.herokuapp.com/',
 	},
 	{ name: 'Bookmark', url: 'https://pasha-bookmark-app.herokuapp.com/' },
 	{ name: 'Calculator', url: 'https://pasha-calculator.herokuapp.com/' },

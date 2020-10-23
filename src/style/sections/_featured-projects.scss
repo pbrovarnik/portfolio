@@ -17,7 +17,7 @@
 		}
 
 		.row:not(:last-child) {
-			margin-bottom: 8rem;
+			margin-bottom: 5rem;
 
 			@include respond(phone) {
 				margin-bottom: 4rem;
