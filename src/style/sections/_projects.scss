@@ -38,6 +38,7 @@
 		margin: 0.98rem 0.98rem;
 		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 		border-radius: 5px;
+		cursor: pointer;
 
 		@include respond(phone-xs) {
 			margin: 0.34rem 0.34rem;

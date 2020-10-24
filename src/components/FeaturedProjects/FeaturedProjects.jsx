@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
-import Fade from 'react-reveal/Fade';
-import Tilt from 'react-tilt';
+import { Fade } from 'react-awesome-reveal';
+import Tilty from 'react-tilty';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
@@ -21,11 +21,11 @@ const FeaturedProject = () => {
 							<Row key={id}>
 								<Col lg={4} sm={12}>
 									<Fade
-										left={!isMobile}
-										bottom={isMobile}
+										direction={isMobile ? '' : 'left'}
 										duration={1000}
 										delay={500}
-										distance='30px'
+										triggerOnce
+										cascade
 									>
 										<div className='featured-project-wrapper__text'>
 											<h3 className='featured-project-wrapper__text-title'>{title}</h3>
@@ -59,11 +59,11 @@ const FeaturedProject = () => {
 								</Col>
 								<Col lg={8} sm={12}>
 									<Fade
-										right={!isMobile}
-										bottom={isMobile}
+										direction={isMobile ? '' : 'right'}
 										duration={1000}
 										delay={1000}
-										distance='30px'
+										triggerOnce
+										cascade
 									>
 										<div className='featured-project-wrapper__image-container'>
 											<a
@@ -72,11 +72,11 @@ const FeaturedProject = () => {
 												aria-label='Project Link'
 												rel='noopener noreferrer'
 											>
-												<Tilt
-													options={{
-														reverse: false,
-														max: 8,
-														perspective: 1000,
+												<Tilty
+													settings={{
+														reverse: true,
+														max: 10,
+														perspective: isMobile ? false : 1000,
 														scale: 1,
 														speed: 300,
 														transition: true,
@@ -85,14 +85,14 @@ const FeaturedProject = () => {
 														easing: 'cubic-bezier(.03,.98,.52,.99)',
 													}}
 												>
-													<div data-tilt className='thumbnail rounded'>
+													<div className='thumbnail rounded'>
 														<img
 															className='featured-project-wrapper__image'
 															alt={alt}
 															src={img}
 														/>
 													</div>
-												</Tilt>
+												</Tilty>
 											</a>
 										</div>
 									</Fade>

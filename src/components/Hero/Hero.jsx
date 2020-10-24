@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { Container } from 'react-bootstrap';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import { Link } from 'react-scroll';
 
 import PortfolioContext from '../../context/context';
@@ -13,11 +13,10 @@ const Header = () => {
 		<section id='hero' className='jumbotron'>
 			<Container>
 				<Fade
-					left={!isMobile}
-					bottom={isMobile}
+					direction={isMobile ? '' : 'left'}
 					duration={1000}
-					delay={500}
-					distance='30px'
+					delay={200}
+					triggerOnce
 				>
 					<h1 className='hero-title'>
 						{title}
@@ -26,13 +25,7 @@ const Header = () => {
 						{subtitle}
 					</h1>
 				</Fade>
-				<Fade
-					left={!isMobile}
-					bottom={isMobile}
-					duration={1000}
-					delay={1000}
-					distance='30px'
-				>
+				<Fade duration={1000} delay={1000}>
 					<p className='hero-cta'>
 						<span
 							className={`cta-btn ${

@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Tilt from 'react-tilt';
+import Tilty from 'react-tilty';
 import { Card } from 'react-bootstrap';
 
 import PortfolioContext from '../../../context/context';
@@ -9,11 +9,11 @@ const ProjectCard = (props) => {
 	const { isMobile } = useContext(PortfolioContext);
 
 	return (
-		<Tilt
-			options={{
-				reverse: false,
-				max: 8,
-				perspective: isMobile ? false : 300,
+		<Tilty
+			settings={{
+				reverse: true,
+				max: 10,
+				perspective: isMobile ? false : 200,
 				scale: isMobile ? false : 1.07,
 				speed: 300,
 				transition: true,
@@ -23,25 +23,26 @@ const ProjectCard = (props) => {
 			}}
 		>
 			<div data-tilt>
-				<Card className='projects-list__card'>
-					<a target='_blank' rel='noopener noreferrer' href={url}>
-						<Card.Body className='projects-list__card--body'>
-							<Card.Title className='projects-list__card--title'>{name}</Card.Title>
-							<Card.Link
-								target='_blank'
-								rel='noopener noreferrer'
-								className={`cta-btn ${
-									isMobile ? 'text-color-main--mobile' : 'text-color-main'
-								} projects-list__card--btn`}
-								href={repo}
-							>
-								<i className='fas fa-code'></i>
-							</Card.Link>
-						</Card.Body>
-					</a>
+				<Card
+					className='projects-list__card'
+					onClick={() => window.open(url, '_blank')}
+				>
+					<Card.Body className='projects-list__card--body'>
+						<Card.Title className='projects-list__card--title'>{name}</Card.Title>
+						<Card.Link
+							target='_blank'
+							rel='noopener noreferrer'
+							className={`cta-btn ${
+								isMobile ? 'text-color-main--mobile' : 'text-color-main'
+							} projects-list__card--btn`}
+							href={repo}
+						>
+							<i className='fas fa-code'></i>
+						</Card.Link>
+					</Card.Body>
 				</Card>
 			</div>
-		</Tilt>
+		</Tilty>
 	);
 };
 

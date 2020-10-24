@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import Fade from 'react-reveal/Fade';
+import { Fade } from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
@@ -15,7 +15,13 @@ const About = () => {
 				<Title title='About Me' />
 				<Row className='about-wrapper'>
 					<Col md={6} sm={12}>
-						<Fade bottom duration={1000} delay={600} distance='30px'>
+						<Fade
+							direction={isMobile ? '' : 'up'}
+							duration={800}
+							delay={600}
+							triggerOnce
+							cascade
+						>
 							<div className='about-wrapper__image-container'>
 								<img
 									className='rounded shadow-lg about-wrapper__image'
@@ -26,13 +32,7 @@ const About = () => {
 						</Fade>
 					</Col>
 					<Col md={6} sm={12}>
-						<Fade
-							left={!isMobile}
-							bottom={isMobile}
-							duration={1000}
-							delay={1000}
-							distance='30px'
-						>
+						<Fade duration={800} delay={1000} triggerOnce>
 							<div className='about-wrapper__info'>
 								<p className='about-wrapper__info-text'>{paragraphOne}</p>
 								<p className='about-wrapper__info-text'>{paragraphTwo}</p>
