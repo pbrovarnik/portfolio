@@ -69,3 +69,30 @@ a:hover {
 		transform: none;
 	}
 }
+
+.text-color-white {
+	color: $white-color;
+
+	@include respond(phone) {
+		color: $white-color;
+	}
+
+	&:hover {
+		color: $white-color;
+		cursor: pointer;
+		transform: translateX(2px);
+
+		@include respond(phone) {
+			transform: none;
+		}
+	}
+}
+
+.text-color-white--mobile {
+	color: $white-color;
+
+	&:hover {
+		transform: none;
+		color: $white-color;
+	}
+}

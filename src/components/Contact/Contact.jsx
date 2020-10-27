@@ -13,19 +13,26 @@ const Contact = () => {
 		<section id='contact'>
 			<Container>
 				<Title title='Contact' />
-				<Fade direction='up' duration={1000} delay={800} triggerOnce>
+				<Fade
+					direction={isMobile ? '' : 'up'}
+					duration={1000}
+					delay={800}
+					triggerOnce
+				>
 					<div className='contact-wrapper'>
 						<p className='contact-wrapper__text'>{cta}</p>
-						<a
-							target='_blank'
-							rel='noopener noreferrer'
-							className={`cta-btn cta-btn ${
-								isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
-							}`}
-							href={`mailto:${email}`}
-						>
-							{btn}
-						</a>
+						<Fade direction={isMobile ? '' : 'up'} duration={1000} triggerOnce>
+							<a
+								target='_blank'
+								rel='noopener noreferrer'
+								className={`cta-btn cta-btn ${
+									isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
+								}`}
+								href={`mailto:${email}`}
+							>
+								{btn}
+							</a>
+						</Fade>
 					</div>
 				</Fade>
 			</Container>

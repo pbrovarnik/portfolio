@@ -25,7 +25,7 @@ const Header = () => {
 						{subtitle}
 					</h1>
 				</Fade>
-				<Fade duration={1000} delay={1000}>
+				<Fade duration={1000} delay={1000} triggerOnce>
 					<p className='hero-cta'>
 						<span
 							className={`cta-btn ${

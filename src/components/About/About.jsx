@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Fade } from 'react-awesome-reveal';
 import { Container, Row, Col } from 'react-bootstrap';
+import { Link } from 'react-scroll';
 
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
@@ -48,6 +49,19 @@ const About = () => {
 									>
 										Resume
 									</a>
+									<Link
+										offset={isMobile ? 0 : 37}
+										to='featured-projects'
+										smooth
+										duration={1000}
+										target='_blank'
+										rel='noopener noreferrer'
+										className={`cta-btn ${
+											isMobile ? 'text-color-white--mobile' : 'text-color-white '
+										}`}
+									>
+										View Projects
+									</Link>
 								</span>
 							</div>
 						</Fade>

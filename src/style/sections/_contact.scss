@@ -3,11 +3,7 @@
 	color: $dark-blue-text;
 	margin-top: -12rem;
 	padding-top: 15rem;
-
-	-webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
-	clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
 	padding: 12rem 0 5rem 0;
-	// margin-bottom: 5rem;
 
 	@include respond(tab-land) {
 		padding-top: 5rem;

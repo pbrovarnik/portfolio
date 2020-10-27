@@ -25,7 +25,6 @@ const FeaturedProject = () => {
 										duration={1000}
 										delay={500}
 										triggerOnce
-										cascade
 									>
 										<div className='featured-project-wrapper__text'>
 											<h3 className='featured-project-wrapper__text-title'>{title}</h3>
@@ -61,9 +60,8 @@ const FeaturedProject = () => {
 									<Fade
 										direction={isMobile ? '' : 'right'}
 										duration={1000}
-										delay={1000}
+										delay={500}
 										triggerOnce
-										cascade
 									>
 										<div className='featured-project-wrapper__image-container'>
 											<a
