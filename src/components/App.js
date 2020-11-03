@@ -63,7 +63,7 @@ const App = () => {
 			<Hero />
 			<About />
 			<FeaturedProjects />
-			<Projects />
+			{/* <Projects /> */}
 			<Contact />
 			<Footer />
 		</PortfolioProvider>

@@ -10,13 +10,11 @@
 	}
 
 	.featured-project-wrapper {
-		// margin-bottom: 15rem;
-
 		@include respond(phone) {
 			margin-bottom: 0rem;
 		}
 
-		.row:not(:last-child) {
+		& .row {
 			margin-bottom: 5rem;
 
 			@include respond(phone) {
@@ -37,8 +35,13 @@
 			@include respond(phone) {
 				margin-bottom: 2.5rem !important;
 			}
-			@include respond(tab-land) {
+
+			@media screen and (max-width: 992px) {
 				margin-bottom: 4.8rem;
+			}
+
+			@include respond(tab-land) {
+				// margin-bottom: 4.8rem;
 			}
 
 			&-title {
@@ -85,6 +88,39 @@
 
 		&__image {
 			width: 100%;
+		}
+
+		&__more-projects-container {
+			display: flex;
+			justify-content: center;
+			transition: all 0.3s ease-in-out;
+
+			&:hover {
+				transform: translateX(4px);
+				cursor: pointer;
+
+				@include respond(phone) {
+					transform: none;
+				}
+			}
+		}
+
+		&__more-projects-btn {
+			font-size: 2.4rem;
+			padding: 0;
+			background-image: linear-gradient(
+				135deg,
+				$primary-color 0%,
+				$secondary-color 100%
+			);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		& .fa-angle-right {
+			font-size: 2.5rem;
+			padding-left: 1.6rem;
+			color: $secondary-color;
 		}
 	}
 }

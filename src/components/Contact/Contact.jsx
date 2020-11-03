@@ -26,7 +26,7 @@ const Contact = () => {
 								target='_blank'
 								rel='noopener noreferrer'
 								className={`cta-btn cta-btn ${
-									isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
+									isMobile ? 'cta-btn--resume-mobile' : 'cta-btn--resume'
 								}`}
 								href={`mailto:${email}`}
 							>

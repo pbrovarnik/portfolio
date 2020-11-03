@@ -53,6 +53,7 @@ a:hover {
 	}
 
 	&:hover {
+		cursor: pointer;
 		transform: translateX(2px);
 
 		@include respond(phone) {

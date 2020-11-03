@@ -13,7 +13,7 @@ const FeaturedProject = () => {
 		<section id='featured-projects'>
 			<Container>
 				<div className='featured-project-wrapper'>
-					<Title title='Featured projects' />
+					<Title title='Projects' />
 					{featuredProjects.map((project, id) => {
 						const { alt, img, title, info, info2, url, repo } = project;
 
@@ -98,6 +98,19 @@ const FeaturedProject = () => {
 							</Row>
 						);
 					})}
+					<Fade duration={1000} delay={500} triggerOnce>
+						<div className='featured-project-wrapper__more-projects-container'>
+							<a
+								target='_blank'
+								rel='noopener noreferrer'
+								className='cta-btn featured-project-wrapper__more-projects-btn'
+								// href={url}
+							>
+								More projects
+							</a>
+							<i className='fa fa-angle-right' aria-hidden='true' />
+						</div>
+					</Fade>
 				</div>
 			</Container>
 		</section>

@@ -2,7 +2,7 @@ import React, { useContext, useState } from 'react';
 import { Container } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
-import SearchBox from '../SearchBox/SearchBox';
+// import SearchBox from '../SearchBox/SearchBox';
 import ProjectsList from './ProjectsList/ProjectsList';
 import Title from '../Title/Title';
 
@@ -24,11 +24,11 @@ const ProjectsContainer = () => {
 		<section id='projects'>
 			<Container>
 				<Title title='More projects' />
-				<SearchBox
+				{/* <SearchBox
 					placeholder='search projects'
 					handleChange={(e) => setSearchValue(e.target.value)}
 					handleKeyPress={handleKeyPress}
-				/>
+				/> */}
 				<ProjectsList projects={filteredProjects} />
 			</Container>
 		</section>
