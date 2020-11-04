@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import App from './components/App';
 import * as serviceWorker from './serviceWorker';
@@ -11,12 +10,7 @@ import './style/main.scss';
 
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter>
-			<Switch>
-				<Route exact path='/' component={App} />
-				<Redirect to='/' />
-			</Switch>
-		</BrowserRouter>
+		<App />
 	</React.StrictMode>,
 	document.getElementById('root')
 );

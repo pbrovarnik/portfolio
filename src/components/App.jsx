@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
+import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 
-import Hero from './Hero/Hero';
-import About from './About/About';
-import FeaturedProjects from './FeaturedProjects/FeaturedProjects';
-import Projects from './Projects/Projects';
-import Contact from './Contact/Contact';
-import Footer from './Footer/Footer';
+import HomePage from '../pages/HomePage';
+import ProjectsPage from '../pages/ProjectsPage';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -45,7 +42,7 @@ const App = () => {
 		setContact({ ...contactData });
 		setFooter({ ...footerData });
 		setIsMobile(/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent));
-		warmUpProjectServers();
+		// warmUpProjectServers();
 	}, []);
 
 	return (
@@ -60,12 +57,13 @@ const App = () => {
 				isMobile,
 			}}
 		>
-			<Hero />
-			<About />
-			<FeaturedProjects />
-			{/* <Projects /> */}
-			<Contact />
-			<Footer />
+			<BrowserRouter>
+				<Switch>
+					<Route exact path='/' component={HomePage} />
+					<Route path='/projects' component={ProjectsPage} />
+					<Redirect to='/' />
+				</Switch>
+			</BrowserRouter>
 		</PortfolioProvider>
 	);
 };
