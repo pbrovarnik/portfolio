@@ -1,35 +1,34 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext, useEffect } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
+import { Fade } from 'react-awesome-reveal';
 
 import PortfolioContext from '../../context/context';
-// import SearchBox from '../SearchBox/SearchBox';
 import ProjectsList from './ProjectsList/ProjectsList';
 import Title from '../Title/Title';
 
 const ProjectsContainer = () => {
+	const history = useHistory();
 	const { projects } = useContext(PortfolioContext);
-	const [searchValue, setSearchValue] = useState('');
-	const filteredProjects = projects.filter(({ name }) =>
-		name.toLowerCase().includes(searchValue.toLowerCase())
-	);
 
-	const handleKeyPress = (e) => {
-		if (filteredProjects.length === 1 && e.key === 'Enter') {
-			const [{ url }] = filteredProjects;
-			window.open(url, '_blank');
-		}
-	};
+	useEffect(() => {
+		window.scrollTo(0, 0);
+	}, []);
 
 	return (
 		<section id='projects'>
-			<Container>
+			<Link onClick={() => history.goBack()} className='projects__back-btn' to='/'>
+				<Fade duration={1000} delay={200} triggerOnce>
+					<i className='fas fa-arrow-circle-left' />
+				</Fade>
+			</Link>
+
+			<div className='projects__heading'>
 				<Title title='More projects' />
-				{/* <SearchBox
-					placeholder='search projects'
-					handleChange={(e) => setSearchValue(e.target.value)}
-					handleKeyPress={handleKeyPress}
-				/> */}
-				<ProjectsList projects={filteredProjects} />
+			</div>
+
+			<Container>
+				<ProjectsList projects={projects} />
 			</Container>
 		</section>
 	);

@@ -5,6 +5,7 @@ import { Link } from 'react-scroll';
 
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+import ImageLoader from '../image-loader/image-loader.conponent';
 
 const About = () => {
 	const { about, isMobile } = useContext(PortfolioContext);
@@ -24,10 +25,12 @@ const About = () => {
 							cascade
 						>
 							<div className='about-wrapper__image-container'>
-								<img
+								<ImageLoader
 									className='rounded shadow-lg about-wrapper__image'
 									alt='about'
 									src={img}
+									height={'3088'}
+									width={'2320'}
 								/>
 							</div>
 						</Fade>

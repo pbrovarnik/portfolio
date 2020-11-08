@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 import Tilty from 'react-tilty';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
 import Title from '../Title/Title';
+import ImageLoader from '../image-loader/image-loader.conponent';
 
 const FeaturedProject = () => {
 	const { featuredProjects, isMobile } = useContext(PortfolioContext);
@@ -84,7 +86,7 @@ const FeaturedProject = () => {
 													}}
 												>
 													<div className='thumbnail rounded'>
-														<img
+														<ImageLoader
 															className='featured-project-wrapper__image'
 															alt={alt}
 															src={img}
@@ -100,13 +102,13 @@ const FeaturedProject = () => {
 					})}
 					<Fade duration={1000} delay={500} triggerOnce>
 						<div className='featured-project-wrapper__more-projects-container'>
-							<a
+							<Link
+								to='/projects'
 								rel='noopener noreferrer'
 								className='cta-btn featured-project-wrapper__more-projects-btn'
-								href='/projects'
 							>
 								More projects
-							</a>
+							</Link>
 							<i className='fa fa-angle-right' aria-hidden='true' />
 						</div>
 					</Fade>

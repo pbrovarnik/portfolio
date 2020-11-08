@@ -1,8 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { /*lazy, Suspense,*/ useState, useEffect } from 'react';
 import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import HomePage from '../pages/HomePage';
 import ProjectsPage from '../pages/ProjectsPage';
+// import Spinner from './spinners/spinner.component';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -15,6 +16,9 @@ import {
 	footerData,
 } from '../data/data';
 
+// const HomePage = lazy(() => import('../pages/HomePage'));
+// const ProjectsPage = lazy(() => import('../pages/ProjectsPage'));
+
 const App = () => {
 	const [hero, setHero] = useState({});
 	const [about, setAbout] = useState({});
@@ -25,14 +29,14 @@ const App = () => {
 	const [isMobile, setIsMobile] = useState(false);
 
 	// Pinging Heroku servers for all projects because they take time to spin up.
-	const warmUpProjectServers = () => {
-		const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-		try {
-			projectsData.forEach(async ({ url }) => await fetch(proxyurl + url));
-		} catch (error) {
-			console.log('Url fetch error', error);
-		}
-	};
+	// const warmUpProjectServers = () => {
+	// 	const proxyurl = 'https://cors-anywhere.herokuapp.com/';
+	// 	try {
+	// 		projectsData.forEach(async ({ url }) => await fetch(proxyurl + url));
+	// 	} catch (error) {
+	// 		console.log('Url fetch error', error);
+	// 	}
+	// };
 
 	useEffect(() => {
 		setHero({ ...heroData });
@@ -58,11 +62,13 @@ const App = () => {
 			}}
 		>
 			<BrowserRouter>
+				{/* <Suspense fallback={<Spinner />}> */}
 				<Switch>
 					<Route exact path='/' component={HomePage} />
 					<Route path='/projects' component={ProjectsPage} />
 					<Redirect to='/' />
 				</Switch>
+				{/* </Suspense> */}
 			</BrowserRouter>
 		</PortfolioProvider>
 	);

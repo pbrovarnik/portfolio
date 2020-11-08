@@ -37,6 +37,7 @@
 
 		&__image {
 			width: 35rem;
+			height: 100%;
 
 			@include respond(tab-port) {
 				width: 30rem;
