@@ -3,11 +3,10 @@ import { Card } from 'react-bootstrap';
 
 import ImageLoader from '../../image-loader/image-loader.conponent';
 
-const NewProjectCard = ({ project, Animation }) => {
+const NewProjectCard = ({ project }) => {
 	const { name, img, repo, url } = project;
 
 	return (
-		// <Animation duration={1000} delay={500} triggerOnce>
 		<Card className='project__card'>
 			<a
 				href={url}
@@ -34,7 +33,6 @@ const NewProjectCard = ({ project, Animation }) => {
 				</a>
 			</Card.Body>
 		</Card>
-		// </Animation>
 	);
 };
 

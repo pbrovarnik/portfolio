@@ -13,7 +13,7 @@ const Homepage = () => {
 			<About />
 			<FeaturedProjects />
 			<Contact />
-			<Footer />
+			<Footer scrollTo='hero' />
 		</>
 	);
 };

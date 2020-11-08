@@ -1,9 +1,8 @@
-import React, { /*lazy, Suspense,*/ useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 
 import Homepage from '../pages/homepage.component';
 import ProjectsPage from '../pages/projects.component';
-// import Spinner from './spinners/spinner.component';
 
 import { PortfolioProvider } from '../context/context';
 
@@ -15,9 +14,6 @@ import {
 	contactData,
 	footerData,
 } from '../data/data';
-
-// const Homepage = lazy(() => import('../pages/homepage.component'));
-// const ProjectsPage = lazy(() => import('../pages/projects.component'));
 
 const App = () => {
 	const [hero, setHero] = useState({});
@@ -62,13 +58,11 @@ const App = () => {
 			}}
 		>
 			<BrowserRouter>
-				{/* <Suspense fallback={<Spinner />}> */}
 				<Switch>
 					<Route exact path='/' component={Homepage} />
 					<Route path='/projects' component={ProjectsPage} />
 					<Redirect to='/' />
 				</Switch>
-				{/* </Suspense> */}
 			</BrowserRouter>
 		</PortfolioProvider>
 	);

@@ -1,5 +1,5 @@
 import React, { useContext, useEffect } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import { Container } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 
@@ -17,13 +17,12 @@ const ProjectsContainer = () => {
 
 	return (
 		<section id='projects'>
-			<Link onClick={() => history.goBack()} className='projects__back-btn' to='/'>
-				<Fade duration={1000} delay={200} triggerOnce>
-					<i className='fas fa-arrow-circle-left' />
-				</Fade>
-			</Link>
-
 			<div className='projects__heading'>
+				<div onClick={() => history.goBack()} className='projects__back-btn'>
+					<Fade duration={1000} delay={200} triggerOnce>
+						<i className='fas fa-arrow-circle-left' />
+					</Fade>
+				</div>
 				<Title title='More projects' />
 			</div>
 
