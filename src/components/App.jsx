@@ -1,8 +1,8 @@
 import React, { /*lazy, Suspense,*/ useState, useEffect } from 'react';
 import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 
-import HomePage from '../pages/HomePage';
-import ProjectsPage from '../pages/ProjectsPage';
+import Homepage from '../pages/homepage.component';
+import ProjectsPage from '../pages/projects.component';
 // import Spinner from './spinners/spinner.component';
 
 import { PortfolioProvider } from '../context/context';
@@ -16,8 +16,8 @@ import {
 	footerData,
 } from '../data/data';
 
-// const HomePage = lazy(() => import('../pages/HomePage'));
-// const ProjectsPage = lazy(() => import('../pages/ProjectsPage'));
+// const Homepage = lazy(() => import('../pages/homepage.component'));
+// const ProjectsPage = lazy(() => import('../pages/projects.component'));
 
 const App = () => {
 	const [hero, setHero] = useState({});
@@ -64,7 +64,7 @@ const App = () => {
 			<BrowserRouter>
 				{/* <Suspense fallback={<Spinner />}> */}
 				<Switch>
-					<Route exact path='/' component={HomePage} />
+					<Route exact path='/' component={Homepage} />
 					<Route path='/projects' component={ProjectsPage} />
 					<Redirect to='/' />
 				</Switch>

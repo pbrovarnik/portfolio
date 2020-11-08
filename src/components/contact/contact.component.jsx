@@ -3,7 +3,7 @@ import { Fade } from 'react-awesome-reveal';
 import { Container } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../title/title.component';
 
 const Contact = () => {
 	const { contact, isMobile } = useContext(PortfolioContext);

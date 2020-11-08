@@ -4,7 +4,7 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-scroll';
 
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../title/title.component';
 import ImageLoader from '../image-loader/image-loader.conponent';
 
 const About = () => {

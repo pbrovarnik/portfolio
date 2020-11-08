@@ -11,7 +11,7 @@ import {
 	AttentionSeeker,
 } from 'react-awesome-reveal';
 
-import NewProjectCard from '../ProjectCard/NewProjectCard';
+import NewProjectCard from '../project-card/new-project-card.component';
 
 const animationsArray = [
 	Zoom,

@@ -5,7 +5,7 @@ import Tilty from 'react-tilty';
 import { Container, Row, Col } from 'react-bootstrap';
 
 import PortfolioContext from '../../context/context';
-import Title from '../Title/Title';
+import Title from '../title/title.component';
 import ImageLoader from '../image-loader/image-loader.conponent';
 
 const FeaturedProject = () => {

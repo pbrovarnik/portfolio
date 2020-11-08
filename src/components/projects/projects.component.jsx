@@ -4,8 +4,8 @@ import { Container } from 'react-bootstrap';
 import { Fade } from 'react-awesome-reveal';
 
 import PortfolioContext from '../../context/context';
-import ProjectsList from './ProjectsList/ProjectsList';
-import Title from '../Title/Title';
+import ProjectsList from './projects-list/projects-list.component';
+import Title from '../title/title.component';
 
 const ProjectsContainer = () => {
 	const history = useHistory();
