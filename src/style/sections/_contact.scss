@@ -5,6 +5,7 @@
 		$primary-color 0%,
 		$secondary-color 100%
 	);
+	-moz-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 	-webkit-clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 	clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
 	padding: 10rem 0 10rem 0;
@@ -14,9 +15,10 @@
 	@include respond(tab-land) {
 		padding-top: 5rem;
 		padding-bottom: 5rem;
-		clip-path: none;
 		margin-top: 0;
+		-moz-clip-path: none;
 		-webkit-clip-path: none;
+		clip-path: none;
 	}
 
 	.contact-wrapper {

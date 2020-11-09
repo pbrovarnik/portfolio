@@ -1,48 +1,40 @@
-import React, { useContext } from 'react';
-import Tilty from 'react-tilty';
+import React from 'react';
 import { Card } from 'react-bootstrap';
 
-import PortfolioContext from '../../../context/context';
+import ImageLoader from '../../image-loader/image-loader.conponent';
 
-const ProjectCard = (props) => {
-	const { name, repo, url } = props.project;
-	const { isMobile } = useContext(PortfolioContext);
+const ProjectCard = ({ project }) => {
+	const { name, img, repo, url } = project;
 
 	return (
-		<Tilty
-			settings={{
-				reverse: true,
-				max: 10,
-				perspective: isMobile ? false : 200,
-				scale: isMobile ? false : 1.07,
-				speed: 300,
-				transition: true,
-				axis: null,
-				reset: true,
-				easing: 'cubic-bezier(.03,.98,.52,.99)',
-			}}
-		>
-			<div data-tilt>
-				<Card
-					className='projects-list__card'
-					onClick={() => window.open(url, '_blank')}
+		<Card className='project__card'>
+			<div className='project__card--img-container'>
+				<a
+					href={url}
+					rel='noopener noreferrer'
+					target='_blank'
+					aria-label='bitbucket'
+					className='project__card--img'
 				>
-					<Card.Body className='projects-list__card--body'>
-						<Card.Title className='projects-list__card--title'>{name}</Card.Title>
-						<Card.Link
-							target='_blank'
-							rel='noopener noreferrer'
-							className={`cta-btn ${
-								isMobile ? 'text-color-main--mobile' : 'text-color-main'
-							} projects-list__card--btn`}
-							href={repo}
-						>
-							<i className='fas fa-code'></i>
-						</Card.Link>
-					</Card.Body>
-				</Card>
+					<Card.Img as={ImageLoader} src={img} />
+				</a>
 			</div>
-		</Tilty>
+			<Card.Body className='project__card--body'>
+				<a href={url} rel='noopener noreferrer' target='_blank'>
+					<Card.Title className='project__card--title'>{name}</Card.Title>
+				</a>
+
+				<a
+					href={repo}
+					rel='noopener noreferrer'
+					target='_blank'
+					aria-label='bitbucket'
+					className='project__card--link'
+				>
+					<i className='fas fa-code project__card--icon' />
+				</a>
+			</Card.Body>
+		</Card>
 	);
 };
 

@@ -16,6 +16,7 @@ a:hover,
 a:visited,
 a:active {
 	text-decoration: none;
+	outline: 0;
 }
 
 a:hover {
@@ -44,11 +45,15 @@ a:hover {
 		$primary-color 0%,
 		$secondary-color 100%
 	);
+	-moz-background-clip: text;
 	-webkit-background-clip: text;
+	background-clip: text;
+	-moz-text-fill-color: transparent;
 	-webkit-text-fill-color: transparent;
 
 	@include respond(phone) {
 		background-image: none;
+		-moz-text-fill-color: $secondary-color;
 		-webkit-text-fill-color: $secondary-color;
 	}
 
@@ -64,6 +69,7 @@ a:hover {
 
 .text-color-main--mobile {
 	background-image: none;
+	-moz-text-fill-color: $secondary-color;
 	-webkit-text-fill-color: $secondary-color;
 
 	&:hover {
