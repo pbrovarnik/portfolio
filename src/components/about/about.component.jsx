@@ -19,10 +19,9 @@ const About = () => {
 					<Col md={6} sm={12}>
 						<Fade
 							direction={isMobile ? '' : 'up'}
-							duration={800}
+							duration={isMobile ? 1700 : 1000}
 							delay={600}
 							triggerOnce
-							cascade
 						>
 							<div className='about-wrapper__image-container'>
 								<ImageLoader
@@ -36,7 +35,7 @@ const About = () => {
 						</Fade>
 					</Col>
 					<Col md={6} sm={12}>
-						<Fade duration={800} delay={1000} triggerOnce>
+						<Fade duration={1000} delay={1000} triggerOnce>
 							<div className='about-wrapper__info'>
 								<p className='about-wrapper__info-text'>{paragraphOne}</p>
 								<p className='about-wrapper__info-text'>{paragraphTwo}</p>

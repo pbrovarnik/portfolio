@@ -19,7 +19,7 @@ const ProjectsContainer = () => {
 		<section id='projects'>
 			<div className='projects__heading'>
 				<div onClick={() => history.goBack()} className='projects__back-btn'>
-					<Fade duration={1000} delay={200} triggerOnce>
+					<Fade direction='left' duration={1000} delay={300} triggerOnce>
 						<i className='fas fa-arrow-circle-left' />
 					</Fade>
 				</div>
