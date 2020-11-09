@@ -25,14 +25,14 @@ const App = () => {
 	const [isMobile, setIsMobile] = useState(false);
 
 	// Pinging Heroku servers for all projects because they take time to spin up.
-	// const warmUpProjectServers = () => {
-	// 	const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-	// 	try {
-	// 		projectsData.forEach(async ({ url }) => await fetch(proxyurl + url));
-	// 	} catch (error) {
-	// 		console.log('Url fetch error', error);
-	// 	}
-	// };
+	const warmUpProjectServers = () => {
+		const proxyurl = 'https://cors-anywhere.herokuapp.com/';
+		try {
+			projectsData.forEach(async ({ url }) => await fetch(proxyurl + url));
+		} catch (error) {
+			console.log('Url fetch error', error);
+		}
+	};
 
 	useEffect(() => {
 		setHero({ ...heroData });
@@ -42,7 +42,7 @@ const App = () => {
 		setContact({ ...contactData });
 		setFooter({ ...footerData });
 		setIsMobile(/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent));
-		// warmUpProjectServers();
+		warmUpProjectServers();
 	}, []);
 
 	return (
