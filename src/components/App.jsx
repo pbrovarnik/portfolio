@@ -42,7 +42,11 @@ const App = () => {
 		setContact({ ...contactData });
 		setFooter({ ...footerData });
 		setIsMobile(/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent));
-		warmUpProjectServers();
+
+		if (process.env.NODE_ENV === 'production') {
+			console.log('!!!!', process.env.NODE_ENV);
+			// warmUpProjectServers();
+		}
 	}, []);
 
 	return (
