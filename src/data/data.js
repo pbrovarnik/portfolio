@@ -4,7 +4,6 @@ import monstersRolodexImg from '../assets/images/monsters-rolodex.png';
 import movieFightImg from '../assets/images/movie-fight.png';
 
 import animatedNavThumbnail from '../assets/images/thumbnails/animated-nav-thumbnail.png';
-import animatedPageThumbnail from '../assets/images/thumbnails/animated-page-thumbnail.png';
 import bookmarkThumbnail from '../assets/images/thumbnails/bookmark-thumbnail.png';
 import calculatorThumbnail from '../assets/images/thumbnails/calculator-thumbnail.png';
 import countdownThumbnail from '../assets/images/thumbnails/countdown-thumbnail.png';
@@ -17,11 +16,9 @@ import mathSprintThumbnail from '../assets/images/thumbnails/math-sprint-thumbna
 import musicPlayerThumbnail from '../assets/images/thumbnails/music-player-thumbnail.png';
 import nasaPhotosThumbnail from '../assets/images/thumbnails/nasa-photos-thumbnail.png';
 import paintThumbnail from '../assets/images/thumbnails/paint-thumbnail.png';
-import pictureInPictureThumbnail from '../assets/images/thumbnails/picture-in-picture.png';
 import pongThumbnail from '../assets/images/thumbnails/pong-thumbnail.png';
 import quotesThumbnail from '../assets/images/thumbnails/quotes-thumbnail.png';
 import secretChatThumbnail from '../assets/images/thumbnails/secret-chat-thumbnail.png';
-import splashPageThumbnail from '../assets/images/thumbnails/splash-page-thumbnail.png';
 import spockRockThumbnail from '../assets/images/thumbnails/spock-rock-thumbnail.png';
 import videoPlayerThumbnail from '../assets/images/thumbnails/video-player-thumbnail.png';
 
@@ -120,13 +117,6 @@ export const projectsData = [
 		url: 'https://pasha-animated-navigation.herokuapp.com/',
 	},
 	{
-		name: 'Animated page',
-		img: animatedPageThumbnail,
-		repo:
-			'https://bitbucket.org/Pasha-brovarnik/animated-landing-page/src/master/',
-		url: 'https://pasha-animated-landing-page.herokuapp.com/',
-	},
-	{
 		name: 'Bookmark',
 		img: bookmarkThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/bookmark-app/src/master/',
@@ -205,12 +195,6 @@ export const projectsData = [
 		url: 'https://pasha-paint.herokuapp.com/',
 	},
 	{
-		name: 'Picture-in-picture',
-		img: pictureInPictureThumbnail,
-		repo: 'https://bitbucket.org/Pasha-brovarnik/picture-in-picture/src/master/',
-		url: 'https://pasha-picture-in-picture.herokuapp.com/',
-	},
-	{
 		name: 'Pong',
 		img: pongThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/pong/src/master/',
@@ -227,12 +211,6 @@ export const projectsData = [
 		img: secretChatThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/secret-chat/src/master/',
 		url: 'https://pasha-secret-chat.herokuapp.com/',
-	},
-	{
-		name: 'Splash page',
-		img: splashPageThumbnail,
-		repo: 'https://bitbucket.org/Pasha-brovarnik/splash-page/src/master/',
-		url: 'https://pasha-splash-page.herokuapp.com/',
 	},
 	{
 		name: 'Spock Rock',
