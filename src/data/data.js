@@ -12,7 +12,6 @@ import infiniteScrollThumbnail from '../assets/images/thumbnails/infinite-scroll
 import jokesThumbnail from '../assets/images/thumbnails/jokes-thumbnail.png';
 import kanbanThumbnail from '../assets/images/thumbnails/kanban-thumbnail.png';
 import lightDarkModeThumbnail from '../assets/images/thumbnails/light-dark-mode-thumbnail.png';
-import mathSprintThumbnail from '../assets/images/thumbnails/math-sprint-thumbnail.png';
 import musicPlayerThumbnail from '../assets/images/thumbnails/music-player-thumbnail.png';
 import nasaPhotosThumbnail from '../assets/images/thumbnails/nasa-photos-thumbnail.png';
 import paintThumbnail from '../assets/images/thumbnails/paint-thumbnail.png';
@@ -163,12 +162,6 @@ export const projectsData = [
 		img: lightDarkModeThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/light-dark-mode/src/master/',
 		url: 'https://pasha-light-dark-mode.herokuapp.com/',
-	},
-	{
-		name: 'Math sprint',
-		img: mathSprintThumbnail,
-		repo: 'https://bitbucket.org/Pasha-brovarnik/math-sprint-game/src/master/',
-		url: 'https://pasha-math-sprint.herokuapp.com/',
 	},
 	// {
 	// 	name: 'Monsters Rolodex',
