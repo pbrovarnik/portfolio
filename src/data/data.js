@@ -21,13 +21,6 @@ import secretChatThumbnail from '../assets/images/thumbnails/secret-chat-thumbna
 import spockRockThumbnail from '../assets/images/thumbnails/spock-rock-thumbnail.png';
 import videoPlayerThumbnail from '../assets/images/thumbnails/video-player-thumbnail.png';
 
-// Head data
-// export const headData = {
-// 	title: '', // e.g: 'Name | Developer'
-// 	lang: '', // e.g: en, es, fr, jp
-// 	description: '', // e.g: Welcome to my website
-// };
-
 // Hero data
 export const heroData = {
 	title: 'Hi, my name is ',
