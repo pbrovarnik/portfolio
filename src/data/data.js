@@ -4,6 +4,7 @@ import monstersRolodexImg from '../assets/images/monsters-rolodex.png';
 import movieFightImg from '../assets/images/movie-fight.png';
 
 import animatedNavThumbnail from '../assets/images/thumbnails/animated-nav-thumbnail.png';
+import bookingPageThumbnail from '../assets/images/thumbnails/booking-page-thumbnail.png';
 import bookmarkThumbnail from '../assets/images/thumbnails/bookmark-thumbnail.png';
 import calculatorThumbnail from '../assets/images/thumbnails/calculator-thumbnail.png';
 import countdownThumbnail from '../assets/images/thumbnails/countdown-thumbnail.png';
@@ -12,8 +13,10 @@ import infiniteScrollThumbnail from '../assets/images/thumbnails/infinite-scroll
 import jokesThumbnail from '../assets/images/thumbnails/jokes-thumbnail.png';
 import kanbanThumbnail from '../assets/images/thumbnails/kanban-thumbnail.png';
 import lightDarkModeThumbnail from '../assets/images/thumbnails/light-dark-mode-thumbnail.png';
+import luxuryHomesThumbnail from '../assets/images/thumbnails/luxury-homes-thumbnail.png';
 import musicPlayerThumbnail from '../assets/images/thumbnails/music-player-thumbnail.png';
 import nasaPhotosThumbnail from '../assets/images/thumbnails/nasa-photos-thumbnail.png';
+import natureToursThumbnail from '../assets/images/thumbnails/nature-tours-thumbnail.png';
 import paintThumbnail from '../assets/images/thumbnails/paint-thumbnail.png';
 import pongThumbnail from '../assets/images/thumbnails/pong-thumbnail.png';
 import quotesThumbnail from '../assets/images/thumbnails/quotes-thumbnail.png';
@@ -109,6 +112,12 @@ export const projectsData = [
 		url: 'https://pasha-animated-navigation.herokuapp.com/',
 	},
 	{
+		name: 'Booking page',
+		img: bookingPageThumbnail,
+		repo: 'https://bitbucket.org/Pasha-brovarnik/booking-landing/src/master/',
+		url: 'https://pasha-booking-landing.herokuapp.com/',
+	},
+	{
 		name: 'Bookmark',
 		img: bookmarkThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/bookmark-app/src/master/',
@@ -156,6 +165,12 @@ export const projectsData = [
 		repo: 'https://bitbucket.org/Pasha-brovarnik/light-dark-mode/src/master/',
 		url: 'https://pasha-light-dark-mode.herokuapp.com/',
 	},
+	{
+		name: 'Luxury homes',
+		img: luxuryHomesThumbnail,
+		repo: 'https://bitbucket.org/Pasha-brovarnik/luxury-homes/src/master/',
+		url: 'https://pasha-luxury-homes-landing.herokuapp.com/',
+	},
 	// {
 	// 	name: 'Monsters Rolodex',
 	// 	img: '',
@@ -173,6 +188,13 @@ export const projectsData = [
 		img: nasaPhotosThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/nasa-pictures/src/master/',
 		url: 'https://pasha-nasa-pictures.herokuapp.com/',
+	},
+	{
+		name: 'Nature tours',
+		img: natureToursThumbnail,
+		repo:
+			'https://bitbucket.org/Pasha-brovarnik/nature-tours-landing/src/master/',
+		url: 'https://pasha-nature-tours-landing.herokuapp.com/',
 	},
 	{
 		name: 'Paint',
