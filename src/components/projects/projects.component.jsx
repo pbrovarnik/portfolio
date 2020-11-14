@@ -15,10 +15,18 @@ const ProjectsContainer = () => {
 		window.scrollTo(0, 0);
 	}, []);
 
+	const handleBackButon = () => {
+		if (history.location.state && history.location.state.prevPath) {
+			history.goBack();
+		} else {
+			history.push('/');
+		}
+	};
+
 	return (
 		<section id='projects'>
 			<div className='projects__heading'>
-				<div onClick={() => history.goBack()} className='projects__back-btn'>
+				<div onClick={handleBackButon} className='projects__back-btn'>
 					<Fade direction='left' duration={1000} delay={300} triggerOnce>
 						<i className='fas fa-arrow-circle-left' />
 					</Fade>

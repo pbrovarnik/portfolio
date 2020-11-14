@@ -103,7 +103,7 @@ const FeaturedProject = () => {
 					<Fade duration={1000} delay={500} triggerOnce>
 						<div className='featured-project-wrapper__more-projects-container'>
 							<Link
-								to='/projects'
+								to={{ pathname: '/projects', state: { prevPath: '/' } }}
 								rel='noopener noreferrer'
 								className='cta-btn featured-project-wrapper__more-projects-btn'
 							>
