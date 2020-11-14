@@ -14,6 +14,7 @@ import jokesThumbnail from '../assets/images/thumbnails/jokes-thumbnail.png';
 import kanbanThumbnail from '../assets/images/thumbnails/kanban-thumbnail.png';
 import lightDarkModeThumbnail from '../assets/images/thumbnails/light-dark-mode-thumbnail.png';
 import luxuryHomesThumbnail from '../assets/images/thumbnails/luxury-homes-thumbnail.png';
+import mazeThumbnail from '../assets/images/thumbnails/maze-thumbnail.png';
 import musicPlayerThumbnail from '../assets/images/thumbnails/music-player-thumbnail.png';
 import nasaPhotosThumbnail from '../assets/images/thumbnails/nasa-photos-thumbnail.png';
 import natureToursThumbnail from '../assets/images/thumbnails/nature-tours-thumbnail.png';
@@ -170,6 +171,12 @@ export const projectsData = [
 		img: luxuryHomesThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/luxury-homes/src/master/',
 		url: 'https://pasha-luxury-homes-landing.herokuapp.com/',
+	},
+	{
+		name: 'Maze',
+		img: mazeThumbnail,
+		repo: 'https://bitbucket.org/Pasha-brovarnik/maze/src/master/',
+		url: 'https://pasha-maze.herokuapp.com/',
 	},
 	// {
 	// 	name: 'Monsters Rolodex',
