@@ -17,7 +17,7 @@ const FeaturedProject = () => {
 				<div className='featured-project-wrapper'>
 					<Title title='Projects' />
 					{featuredProjects.map((project, id) => {
-						const { alt, img, title, info, info2, url, repo } = project;
+						const { alt, img, title, info, url, repo } = project;
 
 						return (
 							<Row key={id}>
@@ -32,7 +32,6 @@ const FeaturedProject = () => {
 											<h3 className='featured-project-wrapper__text-title'>{title}</h3>
 											<div>
 												<p>{info}</p>
-												<p className='mb-4'>{info2}</p>
 											</div>
 											<a
 												target='_blank'

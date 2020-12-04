@@ -1,8 +1,7 @@
 import profilePhoto from '../assets/images/profile-photo.jpg';
-import clothingShopImg from '../assets/images/clothing-shop.png';
-import monstersRolodexImg from '../assets/images/monsters-rolodex.png';
-import movieFightImg from '../assets/images/movie-fight.png';
-
+import clothingShopThumbnail from '../assets/images/thumbnails/clothing-shop-thumbnail.png';
+import moviePreviewThumbnail from '../assets/images/thumbnails/movie-preview-thumbnail.png';
+import movieFightThumbnail from '../assets/images/thumbnails/movie-fight-thumbnail.png';
 import animatedNavThumbnail from '../assets/images/thumbnails/animated-nav-thumbnail.png';
 import bookingPageThumbnail from '../assets/images/thumbnails/booking-page-thumbnail.png';
 import bookmarkThumbnail from '../assets/images/thumbnails/bookmark-thumbnail.png';
@@ -15,6 +14,7 @@ import kanbanThumbnail from '../assets/images/thumbnails/kanban-thumbnail.png';
 import lightDarkModeThumbnail from '../assets/images/thumbnails/light-dark-mode-thumbnail.png';
 import luxuryHomesThumbnail from '../assets/images/thumbnails/luxury-homes-thumbnail.png';
 import mazeThumbnail from '../assets/images/thumbnails/maze-thumbnail.png';
+import monstersRolodexImg from '../assets/images/thumbnails/monsters-rolodex-thumbnail.png';
 import musicPlayerThumbnail from '../assets/images/thumbnails/music-player-thumbnail.png';
 import nasaPhotosThumbnail from '../assets/images/thumbnails/nasa-photos-thumbnail.png';
 import natureToursThumbnail from '../assets/images/thumbnails/nature-tours-thumbnail.png';
@@ -48,34 +48,31 @@ export const aboutData = {
 // Feature Projects data
 export const featureProjectsData = [
 	{
-		alt: 'clothing shot project',
-		img: clothingShopImg,
-		title: 'Clothing shop',
+		title: 'Clothing Shop',
+		alt: 'clothing shop',
+		img: clothingShopThumbnail,
 		info:
-			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
-		info2: '',
-		url: 'https://pashas-clothing-shop.herokuapp.com/',
+			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, SASS, Redux, Firebase, Stripe.',
 		repo: 'https://github.com/pbrovarnik/clothing-shop',
+		url: 'https://pashas-clothing-shop.herokuapp.com/',
 	},
 	{
-		alt: 'movie fight project',
-		img: movieFightImg,
-		title: 'Movie fight',
+		title: 'Movie Preview',
+		alt: 'movie preview',
+		img: moviePreviewThumbnail,
 		info:
-			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
-		info2: '',
-		url: 'https://pasha-movie-fight.herokuapp.com/',
-		repo: 'https://github.com/pbrovarnik/movie-fight',
+			'Find your favorite movies! Users can search for any movie, get a plot overview, watch the trailer, and see rating scores from companies like Rotten Tomatoes and IMDB. The API data is obtained from TheMovieDB, OpenMovieDB, YouTube and uses technologies like React, SASS, and Easy Peasy to built an interactive UI.',
+		repo: 'https://github.com/pbrovarnik/movie-preview',
+		url: 'https://pasha-movie-preview.herokuapp.com/',
 	},
 	{
-		alt: 'monsters project',
-		img: monstersRolodexImg,
-		title: 'Monsters rolodex',
+		title: 'Booking Page',
+		alt: 'booking page',
+		img: bookingPageThumbnail,
 		info:
-			'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
-		info2: '',
-		url: 'https://pasha-monsters-rolodex.herokuapp.com/',
-		repo: 'https://bitbucket.org/Pasha-brovarnik/monsters-rolodex/src/master/',
+			'A simple but elegant take on an all in one Booking page. This is an example UI  with the idea that a user can book a Hotel, Flight, Car Rental, and Tour all on one platform. This application is built using purely HTML5 and SASS.',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/booking-landing/src/master/',
+		url: 'https://pasha-booking-landing.herokuapp.com/',
 	},
 ];
 
@@ -107,134 +104,134 @@ export const footerData = {
 // List of built projects
 export const projectsData = [
 	{
-		name: 'Animated nav',
+		title: 'Animated nav',
 		img: animatedNavThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/animated-navigation/src/master/',
 		url: 'https://pasha-animated-navigation.herokuapp.com/',
 	},
 	{
-		name: 'Booking page',
-		img: bookingPageThumbnail,
-		repo: 'https://bitbucket.org/Pasha-brovarnik/booking-landing/src/master/',
-		url: 'https://pasha-booking-landing.herokuapp.com/',
-	},
-	{
-		name: 'Bookmark',
+		title: 'Bookmark',
 		img: bookmarkThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/bookmark-app/src/master/',
 		url: 'https://pasha-bookmark-app.herokuapp.com/',
 	},
 	{
-		name: 'Calculator',
+		title: 'Calculator',
 		img: calculatorThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/calculator/src/master/',
 		url: 'https://pasha-calculator.herokuapp.com/',
 	},
 	{
-		name: 'Countdown',
+		title: 'Countdown',
 		img: countdownThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/custom-countdown/src/master/',
 		url: 'https://pasha-custom-countdown.herokuapp.com/',
 	},
 	{
-		name: 'Form validation',
+		title: 'Form validation',
 		img: formValidationThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/form-validation/src/master/',
 		url: 'https://pasha-form-validation.herokuapp.com/',
 	},
 	{
-		name: 'Infinite scroll',
+		title: 'Infinite scroll',
 		img: infiniteScrollThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/infinite-scroll/src/master/',
 		url: 'https://pasha-infinite-scroll.herokuapp.com/',
 	},
 	{
-		name: 'Jokes',
+		title: 'Jokes',
 		img: jokesThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/jokes/src/master/',
 		url: 'https://pasha-jokes.herokuapp.com/',
 	},
 	{
-		name: 'Kanban',
+		title: 'Kanban',
 		img: kanbanThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/kanban/src/master/',
 		url: 'https://pasha-kanban.herokuapp.com/',
 	},
 	{
-		name: 'Light dark mode',
+		title: 'Light dark mode',
 		img: lightDarkModeThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/light-dark-mode/src/master/',
 		url: 'https://pasha-light-dark-mode.herokuapp.com/',
 	},
 	{
-		name: 'Luxury homes',
+		title: 'Luxury homes',
 		img: luxuryHomesThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/luxury-homes/src/master/',
 		url: 'https://pasha-luxury-homes-landing.herokuapp.com/',
 	},
 	{
-		name: 'Maze',
+		title: 'Maze',
 		img: mazeThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/maze/src/master/',
 		url: 'https://pasha-maze.herokuapp.com/',
 	},
-	// {
-	// 	name: 'Monsters Rolodex',
-	// 	img: '',
-	// 	repo: 'https://bitbucket.org/Pasha-brovarnik/monsters-rolodex/src/master/',
-	// 	url: 'https://pasha-monsters-rolodex.herokuapp.com/',
-	// },
 	{
-		name: 'Music player',
+		title: 'Monsters Rolodex',
+		img: monstersRolodexImg,
+		url: 'https://pasha-monsters-rolodex.herokuapp.com/',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/monsters-rolodex/src/master/',
+	},
+	{
+		title: 'Movie Fight',
+		img: movieFightThumbnail,
+		url: 'https://pasha-movie-fight.herokuapp.com/',
+		repo: 'https://github.com/pbrovarnik/movie-fight',
+	},
+	{
+		title: 'Music player',
 		img: musicPlayerThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/music-player/src/master/',
 		url: 'https://pasha-music-player.herokuapp.com/',
 	},
 	{
-		name: 'Nasa pictures',
+		title: 'Nasa pictures',
 		img: nasaPhotosThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/nasa-pictures/src/master/',
 		url: 'https://pasha-nasa-pictures.herokuapp.com/',
 	},
 	{
-		name: 'Nature tours',
+		title: 'Nature tours',
 		img: natureToursThumbnail,
 		repo:
 			'https://bitbucket.org/Pasha-brovarnik/nature-tours-landing/src/master/',
 		url: 'https://pasha-nature-tours-landing.herokuapp.com/',
 	},
 	{
-		name: 'Paint',
+		title: 'Paint',
 		img: paintThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/paint/src/master/',
 		url: 'https://pasha-paint.herokuapp.com/',
 	},
 	{
-		name: 'Pong',
+		title: 'Pong',
 		img: pongThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/pong/src/master/',
 		url: 'https://pasha-pong.herokuapp.com/',
 	},
 	{
-		name: 'Quotes',
+		title: 'Quotes',
 		img: quotesThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/quotes/src/master/',
 		url: 'https://pasha-quotes.herokuapp.com/',
 	},
 	{
-		name: 'Secret chat',
+		title: 'Secret chat',
 		img: secretChatThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/secret-chat/src/master/',
 		url: 'https://pasha-secret-chat.herokuapp.com/',
 	},
 	{
-		name: 'Spock Rock',
+		title: 'Spock Rock',
 		img: spockRockThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/spock-rock-game/src/master/',
 		url: 'https://pasha-spock-rock.herokuapp.com/',
 	},
 	{
-		name: 'Video player',
+		title: 'Video player',
 		img: videoPlayerThumbnail,
 		repo: 'https://bitbucket.org/Pasha-brovarnik/video-player/src/master/',
 		url: 'https://pasha-video-player.herokuapp.com/',
