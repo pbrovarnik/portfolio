@@ -45,7 +45,7 @@
 		}
 
 		@include respond(phone) {
-			font-size: $mid-font-size;
+			font-size: $md-font-size;
 		}
 
 		&:hover {

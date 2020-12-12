@@ -12,7 +12,7 @@ const Contact = () => {
 	return (
 		<section id='contact'>
 			<Container>
-				<Title title='Contact' />
+				<Title title='Get In Touch' />
 				<Fade
 					direction={isMobile ? '' : 'up'}
 					duration={1000}

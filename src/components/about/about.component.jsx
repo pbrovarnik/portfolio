@@ -9,7 +9,15 @@ import ImageLoader from '../image-loader/image-loader.conponent';
 
 const About = () => {
 	const { about, isMobile } = useContext(PortfolioContext);
-	const { img, paragraphOne, paragraphTwo, paragraphThree, resume } = about;
+	const {
+		img,
+		paragraphOne,
+		paragraphTwo,
+		paragraphThree,
+		paragraphFour,
+		technologies,
+		resume,
+	} = about;
 
 	return (
 		<section id='about'>
@@ -37,9 +45,18 @@ const About = () => {
 					<Col md={6} sm={12}>
 						<Fade duration={1000} delay={1000} triggerOnce>
 							<div className='about-wrapper__info'>
-								<p className='about-wrapper__info-text'>{paragraphOne}</p>
-								<p className='about-wrapper__info-text'>{paragraphTwo}</p>
-								<p className='about-wrapper__info-text'>{paragraphThree}</p>
+								<p className='about-wrapper__info--text'>{paragraphOne}</p>
+								<p className='about-wrapper__info--text'>{paragraphTwo}</p>
+								<p className='about-wrapper__info--text'>{paragraphThree}</p>
+								<p className='about-wrapper__info--text'>{paragraphFour}</p>
+								<div className='about-wrapper__info--techologies'>
+									{technologies?.map((technology, idx) => (
+										<div key={idx} className='about-wrapper__info--techology-container'>
+											<i className='fas fa-angle-right'></i>
+											{technology}
+										</div>
+									))}
+								</div>
 								<span className='d-flex mt-3 about-wrapper__info-btn'>
 									<a
 										target='_blank'

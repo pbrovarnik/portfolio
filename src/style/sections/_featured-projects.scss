@@ -36,7 +36,7 @@
 			&-title {
 				font-weight: bold;
 				margin-bottom: 1.8rem;
-				font-size: $mid-font-size;
+				font-size: $md-font-size;
 
 				@include respond(phone) {
 					font-size: 2rem;
@@ -46,6 +46,23 @@
 			& p > a {
 				color: $secondary-color;
 			}
+		}
+
+		&__tag-list {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-bottom: 1.1rem;
+		}
+
+		&__tag {
+			font-size: $sm-font-size;
+			background-color: rgba(0, 205, 172, 0.1);
+			color: $primary-color;
+			border-radius: 2.4rem;
+			padding: 0.5rem 1rem;
+			margin-right: 0.4rem;
+			margin-bottom: 0.4rem;
 		}
 
 		&__image-container {

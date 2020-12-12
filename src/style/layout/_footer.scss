@@ -52,6 +52,7 @@
 		height: 5rem;
 		margin: $default-font-size $default-font-size;
 		transition: all 0.2s ease-in;
+		backface-visibility: hidden;
 
 		&:hover {
 			transform: translateY(-2px);

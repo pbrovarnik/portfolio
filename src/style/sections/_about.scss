@@ -65,7 +65,7 @@
 				align-items: center;
 			}
 
-			&-text {
+			&--text {
 				text-align: left;
 
 				@include respond(tab-port) {
@@ -97,6 +97,23 @@
 						background: transparent;
 						font-style: normal;
 					}
+				}
+			}
+
+			&--techologies {
+				display: grid;
+				grid-template-columns: repeat(2, 1fr);
+				column-gap: 8rem;
+				row-gap: 0.5rem;
+				justify-items: start;
+				align-items: center;
+				margin-bottom: 1rem;
+			}
+
+			&--techology-container {
+				font-size: 1.4rem;
+				& > .fas {
+					margin-right: 1.5rem;
 				}
 			}
 		}

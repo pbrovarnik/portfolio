@@ -37,10 +37,13 @@ export const heroData = {
 export const aboutData = {
 	img: profilePhoto,
 	paragraphOne:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
+		"Hello! I'm Pasha, a software engineer based in San Francisco, CA.",
 	paragraphTwo:
-		'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.',
-	paragraphThree: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.',
+		'I enjoy creating software for the internet, whether its web applications, websites, or anything in between. My intentions are to build products that are well designed, performant, and have the user’s experience in mind.',
+	paragraphThree:
+		'I’ve worked with many engineering teams over the last 10 years, spending the majority of my time on the quality side designing tools and processes to ensure reliability. This gives me a unique perspective into the entire development cycle which allows me to not only create great software, but provide an overall awesome product experience.',
+	paragraphFour: "Some technologies I've been working with recently:",
+	technologies: ['JavaScript (ES6+)', 'React', 'Node', 'SASS', 'HTML', 'Redux'],
 	resume:
 		'https://drive.google.com/file/d/0B7h0_KSWIaQ-S0R6ZXl6ZFp5WnM/view?usp=sharing',
 };
@@ -52,7 +55,8 @@ export const featureProjectsData = [
 		alt: 'clothing shop',
 		img: clothingShopThumbnail,
 		info:
-			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, SASS, Redux, Firebase, Stripe.',
+			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
+		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
 		repo: 'https://github.com/pbrovarnik/clothing-shop',
 		url: 'https://pashas-clothing-shop.herokuapp.com/',
 	},
@@ -62,6 +66,14 @@ export const featureProjectsData = [
 		img: moviePreviewThumbnail,
 		info:
 			'Find your favorite movies! Users can search for any movie, get a plot overview, watch the trailer, and see rating scores from companies like Rotten Tomatoes and IMDB. The API data is obtained from TheMovieDB, OpenMovieDB, YouTube and uses technologies like React, SASS, and Easy Peasy to built an interactive UI.',
+		tags: [
+			'React',
+			'Easy-peasy',
+			'SASS',
+			'TheMovieDB',
+			'OpenMovieDB',
+			'YouTube API',
+		],
 		repo: 'https://github.com/pbrovarnik/movie-preview',
 		url: 'https://pasha-movie-preview.herokuapp.com/',
 	},
@@ -71,6 +83,7 @@ export const featureProjectsData = [
 		img: bookingPageThumbnail,
 		info:
 			'A simple but elegant take on an all in one Booking page. This is an example UI  with the idea that a user can book a Hotel, Flight, Car Rental, and Tour all on one platform. This application is built using purely HTML5 and SASS.',
+		tags: ['HTML5', 'SASS'],
 		repo: 'https://bitbucket.org/Pasha-brovarnik/booking-landing/src/master/',
 		url: 'https://pasha-booking-landing.herokuapp.com/',
 	},
@@ -179,7 +192,7 @@ export const projectsData = [
 		title: 'Movie Fight',
 		img: movieFightThumbnail,
 		url: 'https://pasha-movie-fight.herokuapp.com/',
-		repo: 'https://github.com/pbrovarnik/movie-fight',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/movie-fight/src/master/',
 	},
 	{
 		title: 'Music player',

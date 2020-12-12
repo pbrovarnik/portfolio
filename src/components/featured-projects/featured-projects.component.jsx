@@ -15,9 +15,9 @@ const FeaturedProject = () => {
 		<section id='featured-projects'>
 			<Container>
 				<div className='featured-project-wrapper'>
-					<Title title='Projects' />
+					<Title title='Some Things I’ve Built' />
 					{featuredProjects.map((project, id) => {
-						const { alt, img, title, info, url, repo } = project;
+						const { alt, img, title, info, tags, url, repo } = project;
 
 						return (
 							<Row key={id}>
@@ -32,6 +32,13 @@ const FeaturedProject = () => {
 											<h3 className='featured-project-wrapper__text-title'>{title}</h3>
 											<div>
 												<p>{info}</p>
+												<div className='featured-project-wrapper__tag-list'>
+													{tags.map((tag, idx) => (
+														<div key={idx} className='featured-project-wrapper__tag'>
+															{tag}
+														</div>
+													))}
+												</div>
 											</div>
 											<a
 												target='_blank'
@@ -106,7 +113,7 @@ const FeaturedProject = () => {
 								rel='noopener noreferrer'
 								className='cta-btn featured-project-wrapper__more-projects-btn'
 							>
-								More projects
+								Other Projects
 							</Link>
 							<i className='fa fa-angle-right' aria-hidden='true' />
 						</div>
