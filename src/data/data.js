@@ -43,7 +43,16 @@ export const aboutData = {
 	paragraphThree:
 		'I’ve worked with many engineering teams over the last 10 years, spending the majority of my time on the quality side designing tools and processes to ensure reliability. This gives me a unique perspective into the entire development cycle which allows me to not only create great software, but provide an overall awesome product experience.',
 	paragraphFour: "Some technologies I've been working with recently:",
-	technologies: ['JavaScript (ES6+)', 'React', 'Node', 'SASS', 'HTML', 'Redux'],
+	technologies: [
+		'JavaScript (ES6+)',
+		'TypeScript',
+		'React',
+		'Node',
+		'SASS',
+		'HTML',
+		'Redux',
+		'Easy-peasy',
+	],
 	resume:
 		'https://drive.google.com/file/d/0B7h0_KSWIaQ-S0R6ZXl6ZFp5WnM/view?usp=sharing',
 };
