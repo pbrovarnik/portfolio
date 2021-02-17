@@ -50,7 +50,6 @@ const FeaturedProject = () => {
 											>
 												Demo
 											</a>
-
 											<a
 												target='_blank'
 												rel='noopener noreferrer'

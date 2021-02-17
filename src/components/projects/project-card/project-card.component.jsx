@@ -23,8 +23,8 @@ const ProjectCard = ({ project }) => {
 				<a href={url} rel='noopener noreferrer' target='_blank'>
 					<Card.Title className='project__card--title'>{title}</Card.Title>
 				</a>
-
-				<a
+				{/* Temporarly commenting out */}
+				{/* <a
 					href={repo}
 					rel='noopener noreferrer'
 					target='_blank'
@@ -32,7 +32,7 @@ const ProjectCard = ({ project }) => {
 					className='project__card--link'
 				>
 					<i className='fas fa-code project__card--icon' />
-				</a>
+				</a> */}
 			</Card.Body>
 		</Card>
 	);

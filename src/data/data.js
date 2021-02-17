@@ -39,9 +39,9 @@ export const aboutData = {
 	paragraphOne:
 		"Hello! I'm Pasha, a software engineer based in San Francisco, CA.",
 	paragraphTwo:
-		'I enjoy creating software for the internet, whether its web applications, websites, or anything in between. My intentions are to build products that are well designed, performant, and have the user’s experience in mind.',
+		'I enjoy building software for the internet, including web applications, websites, or anything in between. I intend to create performant, well-designed products that have the user experience in mind.',
 	paragraphThree:
-		'I’ve worked with many engineering teams over the last 10 years, spending the majority of my time on the quality side designing tools and processes to ensure reliability. This gives me a unique perspective into the entire development cycle which allows me to not only create great software, but provide an overall awesome product experience.',
+		'I have worked with many engineering teams over the last ten years, spending most of my time designing tools and processes to ensure reliability. Working on the quality side gives me a unique perspective into the entire development cycle, allowing me to not only create great software but provide an overall enjoyable product experience.',
 	paragraphFour: "Some technologies I've been working with recently:",
 	technologies: [
 		'JavaScript (ES6+)',
@@ -54,7 +54,7 @@ export const aboutData = {
 		'Easy-peasy',
 	],
 	resume:
-		'https://drive.google.com/file/d/0B7h0_KSWIaQ-S0R6ZXl6ZFp5WnM/view?usp=sharing',
+		'https://drive.google.com/file/d/1jzH0rSsNE01fjgThGy3LWSYdLhg4zWFZ/view?usp=sharing',
 };
 
 // Feature Projects data
@@ -115,10 +115,6 @@ export const footerData = {
 		{
 			name: 'github',
 			url: 'https://github.com/pbrovarnik',
-		},
-		{
-			name: 'bitbucket',
-			url: 'https://bitbucket.org/Pasha-brovarnik',
 		},
 	],
 };
