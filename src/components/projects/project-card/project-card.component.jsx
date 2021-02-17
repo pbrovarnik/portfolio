@@ -4,7 +4,7 @@ import { Card } from 'react-bootstrap';
 import ImageLoader from '../../image-loader/image-loader.conponent';
 
 const ProjectCard = ({ project }) => {
-	const { title, img, repo, url } = project;
+	const { title, img, url } = project;
 
 	return (
 		<Card className='project__card'>
