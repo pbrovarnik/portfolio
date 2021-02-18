@@ -51,7 +51,7 @@ export const aboutData = {
 		'SASS',
 		'HTML',
 		'Redux',
-		'Easy-peasy',
+		'Easy Peasy',
 	],
 	resume:
 		'https://drive.google.com/file/d/12nFmXimkcgSw3Vy57AzLBaBxrLgG9vzV/view?usp=sharing',
