@@ -41,7 +41,7 @@ export const aboutData = {
 	paragraphTwo:
 		'I enjoy building software for the internet, including web applications, websites, or anything in between. I intend to create performant, well-designed products that have the user experience in mind.',
 	paragraphThree:
-		'I have worked with many engineering teams over the last ten years, spending most of my time designing tools and processes to ensure reliability. Working on the quality side gives me a unique perspective into the entire development cycle, allowing me to not only create great software but provide an overall enjoyable product experience.',
+		'I have worked with many engineering teams over the last 8 years, spending most of my time designing tools and processes to ensure reliability. Working on the quality side gives me a unique perspective into the entire development cycle, allowing me to not only create great software but provide an overall enjoyable product experience.',
 	paragraphFour: "Some technologies I've been working with recently:",
 	technologies: [
 		'JavaScript (ES6+)',
