@@ -84,7 +84,7 @@ export const featureProjectsData = [
 			'YouTube API',
 		],
 		repo: 'https://github.com/pbrovarnik/movie-preview',
-		url: 'https://pasha-movies.netlify.app',
+		url: 'https://www.movie-preview.net',
 	},
 	{
 		title: 'Booking Page',
