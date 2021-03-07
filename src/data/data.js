@@ -54,7 +54,7 @@ export const aboutData = {
 		'Easy Peasy',
 	],
 	resume:
-		'https://drive.google.com/file/d/14pgWX9yeeWVlUhfmVBRlqAUUY9jgZRdR/view?usp=sharing',
+		'https://drive.google.com/file/d/12qYOKSsvvRkQAsmW6wZ7Cbe5jFv22l4g/view?usp=sharing',
 };
 
 // Feature Projects data
