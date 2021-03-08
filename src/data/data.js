@@ -67,7 +67,7 @@ export const featureProjectsData = [
 			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
 		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
 		repo: 'https://github.com/pbrovarnik/clothing-shop',
-		url: 'https://pashas-clothing-shop.herokuapp.com/',
+		url: 'https://www.clothing-shop.net',
 	},
 	{
 		title: 'Movie Preview',
