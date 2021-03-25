@@ -1,5 +1,6 @@
 import profilePhoto from '../assets/images/profile-photo.jpg';
 import clothingShopThumbnail from '../assets/images/thumbnails/clothing-shop-thumbnail.png';
+import chessPartyThumbnail from '../assets/images/thumbnails/chess-party-thumbnail.png';
 import moviePreviewThumbnail from '../assets/images/thumbnails/movie-preview-thumbnail.png';
 import movieFightThumbnail from '../assets/images/thumbnails/movie-fight-thumbnail.png';
 import animatedNavThumbnail from '../assets/images/thumbnails/animated-nav-thumbnail.png';
@@ -50,6 +51,7 @@ export const aboutData = {
 		'Node',
 		'SASS',
 		'HTML',
+		'Socket.io',
 		'Redux',
 		'Easy Peasy',
 	],
@@ -59,6 +61,16 @@ export const aboutData = {
 
 // Feature Projects data
 export const featureProjectsData = [
+	{
+		title: 'Chess Party',
+		alt: 'chess party',
+		img: chessPartyThumbnail,
+		info:
+			'Let’s play a game of chess! Chess party is a real-time online multiplayer game that gives players additional features like video chat and messaging to really immerse themselves  and get competitive with their opponent. This full stack application was built using React, CSS, Socket.io, and WebRTC on the client and Node, Express, and Socket.io on the server.',
+		tags: ['React', 'CSS', 'Socket.io', 'Node', 'WebRTC'],
+		repo: 'https://github.com/pbrovarnik/chess-party-client',
+		url: 'https://www.chess-party.com',
+	},
 	{
 		title: 'Clothing Shop',
 		alt: 'clothing shop',
