@@ -72,16 +72,6 @@ export const featureProjectsData = [
 		url: 'https://www.chess-party.com',
 	},
 	{
-		title: 'Clothing Shop',
-		alt: 'clothing shop',
-		img: clothingShopThumbnail,
-		info:
-			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
-		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
-		repo: 'https://github.com/pbrovarnik/clothing-shop',
-		url: 'https://www.clothing-shop.net',
-	},
-	{
 		title: 'Movie Preview',
 		alt: 'movie preview',
 		img: moviePreviewThumbnail,
@@ -97,6 +87,16 @@ export const featureProjectsData = [
 		],
 		repo: 'https://github.com/pbrovarnik/movie-preview',
 		url: 'https://www.movie-preview.net',
+	},
+	{
+		title: 'Clothing Shop',
+		alt: 'clothing shop',
+		img: clothingShopThumbnail,
+		info:
+			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
+		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
+		repo: 'https://github.com/pbrovarnik/clothing-shop',
+		url: 'https://www.clothing-shop.net',
 	},
 	{
 		title: 'Booking Page',
