@@ -1,19 +1,26 @@
-import React, { useState, useEffect } from 'react';
-import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
+import { useState, useEffect } from 'react';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 
+import ErrorPage from '../pages/error';
+import Layout from '../pages/layout';
 import Homepage from '../pages/homepage.component';
 import ProjectsPage from '../pages/projects.component';
 
 import { PortfolioProvider } from '../context/context';
 
-import {
-	heroData,
-	aboutData,
-	featureProjectsData,
-	projectsData,
-	contactData,
-	footerData,
-} from '../data/data';
+import { heroData, aboutData, featureProjectsData, projectsData, contactData, footerData } from '../data/data';
+
+const router = createBrowserRouter(
+	createRoutesFromElements(
+		<Route path="/" element={<Layout />} errorElement={<ErrorPage />}>
+			<Route index element={<Homepage />} />
+			<Route path="/projects" element={<ProjectsPage />} />
+		</Route>
+	),
+	{
+		basename: '/portfolio',
+	}
+);
 
 const App = () => {
 	const [hero, setHero] = useState({});
@@ -44,7 +51,7 @@ const App = () => {
 		setFooter({ ...footerData });
 		setIsMobile(/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent));
 
-		if (process.env.NODE_ENV === 'production') {
+		if (import.meta.env.NODE_ENV === 'production') {
 			warmUpProjectServers();
 		}
 	}, []);
@@ -59,15 +66,8 @@ const App = () => {
 				contact,
 				footer,
 				isMobile,
-			}}
-		>
-			<BrowserRouter>
-				<Switch>
-					<Route exact path='/' component={Homepage} />
-					<Route path='/projects' component={ProjectsPage} />
-					<Redirect to='/' />
-				</Switch>
-			</BrowserRouter>
+			}}>
+			<RouterProvider router={router} />
 		</PortfolioProvider>
 	);
 };

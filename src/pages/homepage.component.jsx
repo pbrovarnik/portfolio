@@ -1,5 +1,3 @@
-import React from 'react';
-
 import Hero from '../components/hero/hero.component';
 import About from '../components/about/about.component';
 import FeaturedProjects from '../components/featured-projects/featured-projects.component';
@@ -13,7 +11,7 @@ const Homepage = () => {
 			<About />
 			<FeaturedProjects />
 			<Contact />
-			<Footer scrollTo='hero' />
+			<Footer scrollTo="hero" />
 		</>
 	);
 };

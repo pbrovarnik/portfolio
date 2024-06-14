@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Fade } from 'react-awesome-reveal';
 import Tilty from 'react-tilty';
@@ -12,71 +12,42 @@ const FeaturedProject = () => {
 	const { featuredProjects, isMobile } = useContext(PortfolioContext);
 
 	return (
-		<section id='featured-projects'>
+		<section id="featured-projects">
 			<Container>
-				<div className='featured-project-wrapper'>
-					<Title title='Some Things I’ve Built' />
+				<div className="featured-project-wrapper">
+					<Title title="Some Things I’ve Built" />
 					{featuredProjects.map((project, id) => {
 						const { alt, img, title, info, tags, url, repo } = project;
 
 						return (
 							<Row key={id}>
 								<Col lg={4} sm={12}>
-									<Fade
-										direction={isMobile ? '' : 'left'}
-										duration={1000}
-										delay={500}
-										triggerOnce
-									>
-										<div className='featured-project-wrapper__text'>
-											<h3 className='featured-project-wrapper__text-title'>{title}</h3>
+									<Fade direction={isMobile ? '' : 'left'} duration={1000} delay={500} triggerOnce>
+										<div className="featured-project-wrapper__text">
+											<h3 className="featured-project-wrapper__text-title">{title}</h3>
 											<div>
 												<p>{info}</p>
-												<div className='featured-project-wrapper__tag-list'>
+												<div className="featured-project-wrapper__tag-list">
 													{tags.map((tag, idx) => (
-														<div key={idx} className='featured-project-wrapper__tag'>
+														<div key={idx} className="featured-project-wrapper__tag">
 															{tag}
 														</div>
 													))}
 												</div>
 											</div>
-											<a
-												target='_blank'
-												rel='noopener noreferrer'
-												className={`cta-btn ${
-													isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'
-												}`}
-												href={url}
-											>
+											<a target="_blank" rel="noopener noreferrer" className={`cta-btn ${isMobile ? 'cta-btn--hero-mobile' : 'cta-btn--hero'}`} href={url}>
 												Demo
 											</a>
-											<a
-												target='_blank'
-												rel='noopener noreferrer'
-												className={`cta-btn ${
-													isMobile ? 'text-color-main--mobile' : 'text-color-main'
-												}`}
-												href={repo}
-											>
+											<a target="_blank" rel="noopener noreferrer" className={`cta-btn ${isMobile ? 'text-color-main--mobile' : 'text-color-main'}`} href={repo}>
 												Code
 											</a>
 										</div>
 									</Fade>
 								</Col>
 								<Col lg={8} sm={12}>
-									<Fade
-										direction={isMobile ? '' : 'right'}
-										duration={1000}
-										delay={500}
-										triggerOnce
-									>
-										<div className='featured-project-wrapper__image-container'>
-											<a
-												href={url}
-												target='_blank'
-												aria-label='Project Link'
-												rel='noopener noreferrer'
-											>
+									<Fade direction={isMobile ? '' : 'right'} duration={1000} delay={500} triggerOnce>
+										<div className="featured-project-wrapper__image-container">
+											<a href={url} target="_blank" aria-label="Project Link" rel="noopener noreferrer">
 												<Tilty
 													settings={{
 														reverse: true,
@@ -88,14 +59,9 @@ const FeaturedProject = () => {
 														axis: null,
 														reset: true,
 														easing: 'cubic-bezier(.03,.98,.52,.99)',
-													}}
-												>
-													<div className='thumbnail rounded'>
-														<ImageLoader
-															className='featured-project-wrapper__image'
-															alt={alt}
-															src={img}
-														/>
+													}}>
+													<div className="thumbnail rounded">
+														<ImageLoader className="featured-project-wrapper__image" alt={alt} src={img} />
 													</div>
 												</Tilty>
 											</a>
@@ -106,15 +72,11 @@ const FeaturedProject = () => {
 						);
 					})}
 					<Fade duration={1000} delay={500} triggerOnce>
-						<div className='featured-project-wrapper__more-projects-container'>
-							<Link
-								to={{ pathname: '/projects', state: { prevPath: '/' } }}
-								rel='noopener noreferrer'
-								className='cta-btn featured-project-wrapper__more-projects-btn'
-							>
+						<div className="featured-project-wrapper__more-projects-container">
+							<Link to={{ pathname: '/projects', state: { prevPath: '/' } }} rel="noopener noreferrer" className="cta-btn featured-project-wrapper__more-projects-btn">
 								Other Projects
 							</Link>
-							<i className='fa fa-angle-right' aria-hidden='true' />
+							<i className="fa fa-angle-right" aria-hidden="true" />
 						</div>
 					</Fade>
 				</div>
