@@ -37,36 +37,32 @@ export const heroData = {
 // About data
 export const aboutData = {
 	img: profilePhoto,
-	paragraphOne:
-		"Hello! I'm Pasha, a software engineer based in San Francisco, CA.",
+	paragraphOne: "Hello! I'm Pasha, a software engineer based in San Francisco, CA.",
 	paragraphTwo:
 		'I enjoy building software for the internet, including web applications, websites, or anything in between. I intend to create performant, well-designed products that have the user experience in mind.',
 	paragraphThree:
 		'I have worked with many engineering teams over the last 8 years, spending most of my time designing tools and processes to ensure reliability. Working on the quality side gives me a unique perspective into the entire development cycle, allowing me to not only create great software but provide an overall enjoyable product experience.',
 	paragraphFour: "Some technologies I've been working with recently:",
-	technologies: [
-		'JavaScript (ES6+)',
-		'TypeScript',
-		'React',
-		'Node',
-		'SASS',
-		'HTML',
-		'Socket.io',
-		'Redux',
-		'Easy Peasy',
-	],
-	resume:
-		'https://drive.google.com/file/d/1qzIi4pgEFOp7Dd-BYRe7hCOUp5IUwqGG/view?usp=sharing',
+	technologies: ['JavaScript (ES6+)', 'TypeScript', 'React', 'Node', 'SASS', 'HTML', 'Socket.io', 'Redux', 'Easy Peasy'],
+	resume: 'https://drive.google.com/file/d/1qzIi4pgEFOp7Dd-BYRe7hCOUp5IUwqGG/view?usp=sharing',
 };
 
 // Feature Projects data
 export const featureProjectsData = [
 	{
+		title: 'DevDoodles',
+		alt: 'devDoodles page',
+		// img: bookingPageThumbnail,
+		info: 'Step into the world of Dev Doodles! A playful mix of mini projects',
+		tags: ['TypeScript', 'React', 'Hooks', 'Games', 'AI Player', 'Recursion', "Browser API's", 'MiniMax Algorithm', 'Trie Search'],
+		repo: 'https://github.com/pbrovarnik/dev-doodles',
+		url: 'https://pbrovarnik.github.io/dev-doodles/',
+	},
+	{
 		title: 'Chess Party',
 		alt: 'chess party',
 		img: chessPartyThumbnail,
-		info:
-			'Let’s play a game of chess! Chess party is a real-time online multiplayer game that gives players additional features like video chat and messaging to really immerse themselves  and get competitive with their opponent. This full stack application was built using React, CSS, Socket.io, and WebRTC on the client and Node, Express, and Socket.io on the server.',
+		info: 'Let’s play a game of chess! Chess party is a real-time online multiplayer game that gives players additional features like video chat and messaging to really immerse themselves  and get competitive with their opponent. This full stack application was built using React, CSS, Socket.io, and WebRTC on the client and Node, Express, and Socket.io on the server.',
 		tags: ['React', 'CSS', 'Socket.io', 'Node', 'WebRTC'],
 		repo: 'https://github.com/pbrovarnik/chess-party-client',
 		url: 'https://www.chess-party.com',
@@ -75,38 +71,19 @@ export const featureProjectsData = [
 		title: 'Movie Preview',
 		alt: 'movie preview',
 		img: moviePreviewThumbnail,
-		info:
-			'Find your favorite movies! Users can search for any movie, get a plot overview, watch the trailer, and see rating scores from companies like Rotten Tomatoes and IMDB. The API data is obtained from TheMovieDB, OpenMovieDB, YouTube and uses technologies like React, SASS, and Easy Peasy to built an interactive UI.',
-		tags: [
-			'React',
-			'Easy-peasy',
-			'SASS',
-			'TheMovieDB',
-			'OpenMovieDB',
-			'YouTube API',
-		],
+		info: 'Find your favorite movies! Users can search for any movie, get a plot overview, watch the trailer, and see rating scores from companies like Rotten Tomatoes and IMDB. The API data is obtained from TheMovieDB, OpenMovieDB, YouTube and uses technologies like React, SASS, and Easy Peasy to built an interactive UI.',
+		tags: ['React', 'Easy-peasy', 'SASS', 'TheMovieDB', 'OpenMovieDB', 'YouTube API'],
 		repo: 'https://github.com/pbrovarnik/movie-preview',
-		url: 'https://www.movie-preview.net',
+		url: 'pbrovarnik.github.io/movie-preview/',
 	},
 	{
 		title: 'Clothing Shop',
 		alt: 'clothing shop',
 		img: clothingShopThumbnail,
-		info:
-			'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
+		info: 'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
 		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
 		repo: 'https://github.com/pbrovarnik/clothing-shop',
 		url: 'https://www.clothing-shop.net',
-	},
-	{
-		title: 'Booking Page',
-		alt: 'booking page',
-		img: bookingPageThumbnail,
-		info:
-			'A simple but elegant take on an all in one Booking page. This is an example UI  with the idea that a user can book a Hotel, Flight, Car Rental, and Tour all on one platform. This application is built using purely HTML5 and SASS.',
-		tags: ['HTML5', 'SASS'],
-		repo: 'https://bitbucket.org/Pasha-brovarnik/booking-landing/src/master/',
-		url: 'https://pasha-booking-page.netlify.app',
 	},
 ];
 
@@ -226,8 +203,7 @@ export const projectsData = [
 	{
 		title: 'Nature tours',
 		img: natureToursThumbnail,
-		repo:
-			'https://bitbucket.org/Pasha-brovarnik/nature-tours-landing/src/master/',
+		repo: 'https://bitbucket.org/Pasha-brovarnik/nature-tours-landing/src/master/',
 		url: 'https://pasha-nature-tours.netlify.app/',
 	},
 	{
