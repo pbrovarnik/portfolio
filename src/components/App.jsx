@@ -18,7 +18,7 @@ const router = createBrowserRouter(
 		</Route>
 	),
 	{
-		basename: '/portfolio',
+		basename: import.meta.env.BASE_URL,
 	}
 );
 
