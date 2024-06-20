@@ -4,7 +4,7 @@ import chessPartyThumbnail from '../assets/images/thumbnails/chess-party-thumbna
 import moviePreviewThumbnail from '../assets/images/thumbnails/movie-preview-thumbnail.png';
 import movieFightThumbnail from '../assets/images/thumbnails/movie-fight-thumbnail.png';
 import animatedNavThumbnail from '../assets/images/thumbnails/animated-nav-thumbnail.png';
-import bookingPageThumbnail from '../assets/images/thumbnails/booking-page-thumbnail.png';
+import devDoodlesThumbnail from '../assets/images/thumbnails/dev-doodles-thumbnail.png';
 import bookmarkThumbnail from '../assets/images/thumbnails/bookmark-thumbnail.png';
 import calculatorThumbnail from '../assets/images/thumbnails/calculator-thumbnail.png';
 import countdownThumbnail from '../assets/images/thumbnails/countdown-thumbnail.png';
@@ -50,15 +50,6 @@ export const aboutData = {
 // Feature Projects data
 export const featureProjectsData = [
 	{
-		title: 'DevDoodles',
-		alt: 'devDoodles page',
-		// img: bookingPageThumbnail,
-		info: 'Step into the world of Dev Doodles! A playful mix of mini projects',
-		tags: ['TypeScript', 'React', 'Hooks', 'Games', 'AI Player', 'Recursion', "Browser API's", 'MiniMax Algorithm', 'Trie Search'],
-		repo: 'https://github.com/pbrovarnik/dev-doodles',
-		url: 'https://pbrovarnik.github.io/dev-doodles/',
-	},
-	{
 		title: 'Chess Party',
 		alt: 'chess party',
 		img: chessPartyThumbnail,
@@ -84,6 +75,15 @@ export const featureProjectsData = [
 		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
 		repo: 'https://github.com/pbrovarnik/clothing-shop',
 		url: 'https://www.clothing-shop.net',
+	},
+	{
+		title: 'DevDoodles',
+		alt: 'devDoodles page',
+		img: devDoodlesThumbnail,
+		info: 'Step into the world of Dev Doodles! A playful mix of mini projects',
+		tags: ['TypeScript', 'React', 'Hooks', 'Games', 'AI Player', 'Recursion', "Browser API's", 'MiniMax Algorithm', 'Trie Search'],
+		repo: 'https://github.com/pbrovarnik/dev-doodles',
+		url: 'https://pbrovarnik.github.io/dev-doodles/',
 	},
 ];
 
