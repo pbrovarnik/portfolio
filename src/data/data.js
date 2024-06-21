@@ -47,6 +47,8 @@ export const aboutData = {
 	resume: 'https://drive.google.com/file/d/1qzIi4pgEFOp7Dd-BYRe7hCOUp5IUwqGG/view?usp=sharing',
 };
 
+const baseUrl = 'https://pbrovarnik.github.io';
+
 // Feature Projects data
 export const featureProjectsData = [
 	{
@@ -56,7 +58,7 @@ export const featureProjectsData = [
 		info: 'Let’s play a game of chess! Chess party is a real-time online multiplayer game that gives players additional features like video chat and messaging to really immerse themselves  and get competitive with their opponent. This full stack application was built using React, CSS, Socket.io, and WebRTC on the client and Node, Express, and Socket.io on the server.',
 		tags: ['React', 'CSS', 'Socket.io', 'Node', 'WebRTC'],
 		repo: 'https://github.com/pbrovarnik/chess-party-client',
-		url: 'https://www.chess-party.com',
+		url: `${baseUrl}/chess-party/`,
 	},
 	{
 		title: 'Movie Preview',
@@ -65,7 +67,7 @@ export const featureProjectsData = [
 		info: 'Find your favorite movies! Users can search for any movie, get a plot overview, watch the trailer, and see rating scores from companies like Rotten Tomatoes and IMDB. The API data is obtained from TheMovieDB, OpenMovieDB, YouTube and uses technologies like React, SASS, and Easy Peasy to built an interactive UI.',
 		tags: ['React', 'Easy-peasy', 'SASS', 'TheMovieDB', 'OpenMovieDB', 'YouTube API'],
 		repo: 'https://github.com/pbrovarnik/movie-preview',
-		url: 'pbrovarnik.github.io/movie-preview/',
+		url: `${baseUrl}/movie-preview/`,
 	},
 	{
 		title: 'Clothing Shop',
@@ -74,7 +76,7 @@ export const featureProjectsData = [
 		info: 'A example of a massive e-commerce application, similar to Shopify, that gives users an authentic online shopping experience. This is a full stack appilcation that was built using some of the latest technologies like React, Redux, SASS, Firebase, Stripe.',
 		tags: ['React', 'Redux', 'SASS', 'Firebase', 'Stripe API'],
 		repo: 'https://github.com/pbrovarnik/clothing-shop',
-		url: 'https://www.clothing-shop.net',
+		url: `${baseUrl}/clothing-shop/`,
 	},
 	{
 		title: 'DevDoodles',
@@ -83,7 +85,7 @@ export const featureProjectsData = [
 		info: 'Step into the world of Dev Doodles! A playful mix of mini projects',
 		tags: ['TypeScript', 'React', 'Hooks', 'Games', 'AI Player', 'Recursion', "Browser API's", 'MiniMax Algorithm', 'Trie Search'],
 		repo: 'https://github.com/pbrovarnik/dev-doodles',
-		url: 'https://pbrovarnik.github.io/dev-doodles/',
+		url: `${baseUrl}/dev-doodles/`,
 	},
 ];
 
