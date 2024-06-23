@@ -31,17 +31,6 @@ const App = () => {
 	const [footer, setFooter] = useState({});
 	const [isMobile, setIsMobile] = useState(false);
 
-	// Pinging Heroku servers for all projects because they take time to spin up.
-	const warmUpProjectServers = async () => {
-		const proxyUrl = 'https://cors-anywhere.herokuapp.com';
-		const appUrl = 'https://pashas-clothing-shop.herokuapp.com/';
-		try {
-			await fetch(`${proxyUrl}/${appUrl}`);
-		} catch (error) {
-			console.log('Url fetch error', error);
-		}
-	};
-
 	useEffect(() => {
 		setHero({ ...heroData });
 		setAbout({ ...aboutData });
@@ -50,10 +39,6 @@ const App = () => {
 		setContact({ ...contactData });
 		setFooter({ ...footerData });
 		setIsMobile(/Android|webOS|iPhone|iPad|iPod/i.test(navigator.userAgent));
-
-		if (import.meta.env.NODE_ENV === 'production') {
-			warmUpProjectServers();
-		}
 	}, []);
 
 	return (
