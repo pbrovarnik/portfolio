@@ -30,7 +30,7 @@ import videoPlayerThumbnail from '../assets/images/thumbnails/video-player-thumb
 export const heroData = {
 	title: 'Hi, my name is ',
 	name: 'Pasha',
-	subtitle: "I'm the Unknown Developer.",
+	subtitle: '',
 	cta: 'Get to know me',
 };
 
