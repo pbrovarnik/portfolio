@@ -44,7 +44,7 @@ export const aboutData = {
 		'I have worked with many engineering teams over the last 8 years, spending most of my time designing tools and processes to ensure reliability. Working on the quality side gives me a unique perspective into the entire development cycle, allowing me to not only create great software but provide an overall enjoyable product experience.',
 	paragraphFour: "Some technologies I've been working with recently:",
 	technologies: ['JavaScript (ES6+)', 'TypeScript', 'React', 'Node', 'SASS', 'HTML', 'Socket.io', 'Redux', 'Easy Peasy'],
-	resume: 'https://drive.google.com/file/d/1qzIi4pgEFOp7Dd-BYRe7hCOUp5IUwqGG/view?usp=sharing',
+	resume: 'https://drive.google.com/file/d/1V8c7veTKcse3-cf9E342rIpFvHp0g5v4/view?usp=sharing',
 };
 
 const baseUrl = 'https://pbrovarnik.github.io';
