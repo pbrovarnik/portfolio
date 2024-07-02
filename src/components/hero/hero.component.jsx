@@ -15,7 +15,7 @@ const Header = () => {
 				<Fade direction={isMobile ? '' : 'left'} duration={1000} delay={200} triggerOnce>
 					<h1 className="hero-title">
 						{title}
-						<span className="text-color-main">{name}</span>.
+						<span className="text-color-main">{name}</span>👋
 						<br />
 						{subtitle}
 					</h1>

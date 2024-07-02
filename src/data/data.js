@@ -28,9 +28,9 @@ import videoPlayerThumbnail from '../assets/images/thumbnails/video-player-thumb
 
 // Hero data
 export const heroData = {
-	title: 'Hi, my name is ',
-	name: 'Pasha',
-	subtitle: '',
+	title: "Hi there, I'm",
+	name: ' Pasha! ',
+	subtitle: "I'm a full-stack web developer.",
 	cta: 'Get to know me',
 };
 
@@ -57,7 +57,7 @@ export const featureProjectsData = [
 		img: chessPartyThumbnail,
 		info: 'Let’s play a game of chess! Chess party is a real-time online multiplayer game that gives players additional features like video chat and messaging to really immerse themselves  and get competitive with their opponent. This full stack application was built using React, CSS, Socket.io, and WebRTC on the client and Node, Express, and Socket.io on the server.',
 		tags: ['React', 'CSS', 'Socket.io', 'Node', 'WebRTC'],
-		repo: 'https://github.com/pbrovarnik/chess-party-client',
+		repo: 'https://github.com/pbrovarnik/chess-party',
 		url: `${baseUrl}/chess-party/`,
 	},
 	{
@@ -82,7 +82,7 @@ export const featureProjectsData = [
 		title: 'DevDoodles',
 		alt: 'devDoodles page',
 		img: devDoodlesThumbnail,
-		info: 'Step into the world of Dev Doodles! A playful mix of mini projects',
+		info: 'Step into the world of Dev Doodles! A playful mix of mini projects.',
 		tags: ['TypeScript', 'React', 'Hooks', 'Games', 'AI Player', 'Recursion', "Browser API's", 'MiniMax Algorithm', 'Trie Search'],
 		repo: 'https://github.com/pbrovarnik/dev-doodles',
 		url: `${baseUrl}/dev-doodles/`,

@@ -15,7 +15,7 @@ const FeaturedProject = () => {
 		<section id="featured-projects">
 			<Container>
 				<div className="featured-project-wrapper">
-					<Title title="Some Things I’ve Built" />
+					<Title title="Cool stuff i’ve built" />
 					{featuredProjects.map((project, id) => {
 						const { alt, img, title, info, tags, url, repo } = project;
 
