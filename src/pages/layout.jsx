@@ -4,7 +4,12 @@ function Layout() {
 	return (
 		<div className="layout">
 			<div className="banner">
-				<strong>Portfolio V2 coming Summer 2024</strong>
+				Checkout my new
+				<strong>
+					<a href="https://pashabrovarnik.com" rel="noopener noreferrer" target="_blank" aria-label="New version of Pashabrovarnik.com (opens in a new tab)">
+						Portfolio
+					</a>
+				</strong>
 				<span>🚀</span>
 			</div>
 

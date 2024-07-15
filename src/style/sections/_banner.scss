@@ -7,4 +7,12 @@
 	gap: 8px;
 	font-size: 14px;
 	color: white;
+
+	a {
+		color: inherit;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }
