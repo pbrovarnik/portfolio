@@ -29,7 +29,6 @@ const Footer = ({ scrollTo }) => {
 				</div>
 				<hr />
 				<p className="footer__text">
-					© {new Date().getFullYear()} -{' '}
 					<a href="https://github.com/pbrovarnik" target="_blank" rel="noopener noreferrer">
 						Pasha Brovarnik
 					</a>
